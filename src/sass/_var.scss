@@ -51,3 +51,24 @@ $newColor: #03a9f4;
 		background: $blueColor;
 	}
 }
+
+.fa-star{
+	color: $goldColor;
+}
+
+.headerTemp{
+	color: #484848;
+	text-transform: uppercase;
+	font-family: "RalewayBlack";
+}
+
+.redPrice{
+	color: $redColor;
+	font-size: 16px;
+	font-family: "OpenSansBold";
+}
+.oldPrice{
+	font-size: 12px;
+	color: #999;
+	text-decoration: line-through;
+}

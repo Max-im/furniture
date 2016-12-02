@@ -153,6 +153,8 @@ ___________________________________________________________*/
 	}
 
 }
+
+
 .rightPanel{
 	.fa{
 		font-size: 18px;	
@@ -369,7 +371,7 @@ ___________________________________________________________*/
 				vertical-align: middle;
 				line-height: 50px;
 				a{
-					color: #fff;
+					color: #b6b6b6;
 					margin: 0 4px;
 					&:hover{
 						color: $blueColor;
@@ -381,8 +383,7 @@ ___________________________________________________________*/
 
 	/*popup window*/
 	.cartPopup{
-		display: none;
-		z-index: 100;
+		z-index: 100;	
 		position: absolute;
 		right: 0px;
 		top: 100%;
@@ -390,6 +391,7 @@ ___________________________________________________________*/
 		background: #fff;
 		width: 360px;
 		padding: 17px;
+		display: none;
 		.addedItems{
 			font-size: 12px;
 			color: #484848;
@@ -427,7 +429,6 @@ ___________________________________________________________*/
 					.stars{
 						margin: 0 0 8px 0;
 						.fa-star{
-							color: $goldColor;
 							font-size: 12px;
 						}
 						.rewies{
@@ -438,9 +439,7 @@ ___________________________________________________________*/
 					}
 					.priceAndNum{
 						.price{
-							font-family: "OpenSansBold";
-							color: $redColor;
-							font-size: 16px;
+							@extend .redPrice;
 							display: inline-block;
 							vertical-align: middle;
 						}
@@ -546,7 +545,7 @@ ___________________________________________________________*/
 		justify-content: space-between;	
 	}
 	.mainMenuNav{
-		flex-basis: 65%;
+		flex-basis: 80%;
 
 		.mainMenuList{
 				font-size: 0px;
@@ -565,12 +564,10 @@ ___________________________________________________________*/
 						background: $blueColor;
 					}
 				}
-				.fa{
+				.home{
 					font-size: 24px;
 					padding: 13px 24px;
 				}
-
-				.home{}
 				.features{
 					padding: 17px 24px 17px 30px;
 				}
@@ -580,14 +577,108 @@ ___________________________________________________________*/
 				.badrooms{
 					padding: 17px 24px 17px 18px;
 				}
+
 				.blog{
 					padding: 17px 35px 17px 33px;
 				}
 				.contactUs{
 				}
 			}
+	
+
+
+			.badroomsMenuItem{
+				&:hover{
+					.badrooms{
+						&::after{
+							content:"";
+							width: 0;
+						}
+					}
+					.subMenuBadroomsWrap{
+						display: flex;
+					}
+				}
+			}
 		}
 	}
 	
+
+	/*subMenu*/
+
+	.subMenuBadroomsWrap{
+		z-index: 99;	
+		position: absolute;
+		left: 0px;
+		top: 37px;
+		box-shadow: 0 0 6px rgba(0,0,0,.35); 
+		background: #fff;
+		max-width: 820px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		display: none;		
+		
+		.subMenuBadrooms{
+			width: 195px;
+			padding: 30px 25px 0 30px;
+			background: #f2f2f2;
+			.firstSubMenuItem{
+				@extend .headerTemp;
+			}
+			.subMenuItem{
+				color: #494949;
+				padding: 10px 0;
+				display: block;
+			}
+
+		}
+		.goods{
+			margin: 30px;
+			width: 270px;
+			height: 420px;
+			border: 1px solid #dadada;
+			text-align: center;
+			position: relative;
+			img{
+				width: 100%;
+			}
+			.goodsHeader{
+				@extend .headerTemp;
+				margin: 5px 0 0 0;
+			}
+			&:last-child{
+				margin: 30px 30px 30px 0;
+			}
+			.fa-star{
+				margin: 10px 0;
+			}
+			.oldPrice{
+				margin: 0 10px 0 0 ;
+			}
+			.bottomLinks{
+				width: 100%;
+				padding: 16px;
+				box-sizing: border-box;
+				border-top: 1px solid #dadada;
+				position: absolute;
+				bottom: 0;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+				.fa{
+					color: #999;
+				}
+				.btn{
+					color: $blueColor;
+					text-transform: uppercase;
+					font-family: "RalewayBlack";
+				}
+
+			}
+		}
+	} /*subMenuBadroomsWrap*/
 
 }

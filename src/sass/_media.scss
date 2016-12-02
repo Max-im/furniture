@@ -25,7 +25,55 @@
 				line-height: 25px;
 			}
 		} 
+		
 	}
+	.mainMenuLine{
+		.container{
+			.mainMenuNav{
+				.mainMenuList{
+					.mainMenuItem{
+						.home{
+							padding: 13px 14px;
+						}
+						.features{
+							padding: 17px 14px;
+						}
+						.livingRoom{
+							padding: 17px 14px;
+						}
+						.badrooms{
+							padding: 17px 14px;
+						}
+
+						.blog{
+							padding: 17px 14px;
+						}
+						.contactUs{
+							padding: 17px 14px;
+						}
+					}
+
+					.badroomsMenuItem{
+						.subMenuBadroomsWrap{
+							.subMenuBadrooms{
+								width: 160px;
+								padding: 10px;
+							}
+							.goods{
+								margin: 10px;
+								width: 230px;
+								height: 400px;
+								&:last-child{
+									margin: 10px 10px 10px 0;
+								}
+							}
+						} 
+					}
+				}
+			}
+		}
+	}	
+
 
 }
 
@@ -34,6 +82,9 @@
 
 	.hide992{
 		display: none;
+	}
+	.hideAll992{
+		display: none;	
 	}
 
 	.container{
@@ -93,6 +144,9 @@
 			}
 		} 
 	}
+
+
+
 
 }
 
