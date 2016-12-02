@@ -1,0 +1,53 @@
+/*@import var and mixin*/
+
+/*colors*/
+$blueColor: #279cc7;
+$saleColor: #ff5722; 
+$redColor: #e13131;
+$goldColor: #ff9600;
+$newColor: #03a9f4;
+
+
+.strong{
+  font-family: "RalewayExtraBold";
+}
+
+.big{
+  text-transform: uppercase;
+}
+
+.blue{
+  color: $blueColor;
+}
+
+.active{
+	background: $blueColor;
+}
+
+.hot{
+	position: relative;
+	&::after{
+		content: "HOT";
+		display: block;
+		width: 25px;
+		height: 12px;
+		background: $redColor;
+		color: #fff;
+		font-family: "MyriadProRegular";
+		font-size: 8px;
+		border-radius: 10px;
+		position: absolute;
+		right: 5px;
+		top: 5px;
+		letter-spacing: .1px;
+		text-align: center;
+		line-height: 12px;
+	}
+}
+.new{
+	@extend .hot;
+	&::after{
+		content: "NEW";
+		background: $blueColor;
+	}
+}

@@ -1,0 +1,942 @@
+@charset "UTF-8";
+/* Код для подключения шрифта в /css/stylename.css */
+/* font-family: "RalewayRegular"; */
+@font-face {
+  font-family: "RalewayRegular";
+  src: url("../fonts/RalewayRegular/RalewayRegular.eot");
+  src: url("../fonts/RalewayRegular/RalewayRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayRegular/RalewayRegular.woff") format("woff"), url("../fonts/RalewayRegular/RalewayRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "RalewayThin"; */
+@font-face {
+  font-family: "RalewayThin";
+  src: url("../fonts/RalewayThin/RalewayThin.eot");
+  src: url("../fonts/RalewayThin/RalewayThin.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayThin/RalewayThin.woff") format("woff"), url("../fonts/RalewayThin/RalewayThin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "RalewayExtraLight"; */
+@font-face {
+  font-family: "RalewayExtraLight";
+  src: url("../fonts/RalewayExtraLight/RalewayExtraLight.eot");
+  src: url("../fonts/RalewayExtraLight/RalewayExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayExtraLight/RalewayExtraLight.woff") format("woff"), url("../fonts/RalewayExtraLight/RalewayExtraLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "RalewayLight"; */
+@font-face {
+  font-family: "RalewayLight";
+  src: url("../fonts/RalewayLight/RalewayLight.eot");
+  src: url("../fonts/RalewayLight/RalewayLight.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayLight/RalewayLight.woff") format("woff"), url("../fonts/RalewayLight/RalewayLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "RalewayMedium"; */
+@font-face {
+  font-family: "RalewayMedium";
+  src: url("../fonts/RalewayMedium/RalewayMedium.eot");
+  src: url("../fonts/RalewayMedium/RalewayMedium.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayMedium/RalewayMedium.woff") format("woff"), url("../fonts/RalewayMedium/RalewayMedium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "RalewaySemiBold"; */
+@font-face {
+  font-family: "RalewaySemiBold";
+  src: url("../fonts/RalewaySemiBold/RalewaySemiBold.eot");
+  src: url("../fonts/RalewaySemiBold/RalewaySemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewaySemiBold/RalewaySemiBold.woff") format("woff"), url("../fonts/RalewaySemiBold/RalewaySemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "RalewayBold"; */
+@font-face {
+  font-family: "RalewayBold";
+  src: url("../fonts/RalewayBold/RalewayBold.eot");
+  src: url("../fonts/RalewayBold/RalewayBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayBold/RalewayBold.woff") format("woff"), url("../fonts/RalewayBold/RalewayBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "RalewayExtraBold"; */
+@font-face {
+  font-family: "RalewayExtraBold";
+  src: url("../fonts/RalewayExtraBold/RalewayExtraBold.eot");
+  src: url("../fonts/RalewayExtraBold/RalewayExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayExtraBold/RalewayExtraBold.woff") format("woff"), url("../fonts/RalewayExtraBold/RalewayExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "RalewayBlack"; */
+@font-face {
+  font-family: "RalewayBlack";
+  src: url("../fonts/RalewayBlack/RalewayBlack.eot");
+  src: url("../fonts/RalewayBlack/RalewayBlack.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayBlack/RalewayBlack.woff") format("woff"), url("../fonts/RalewayBlack/RalewayBlack.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "lobsterTwo"; */
+@font-face {
+  font-family: "lobsterTwo";
+  src: url("../fonts/LobsterTwo-BoldItalic.otf");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "LobsterRegular"; */
+@font-face {
+  font-family: "LobsterRegular";
+  src: url("../fonts/LobsterRegular/LobsterRegular.eot");
+  src: url("../fonts/LobsterRegular/LobsterRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/LobsterRegular/LobsterRegular.woff") format("woff"), url("../fonts/LobsterRegular/LobsterRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "OpenSansRegular"; */
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot");
+  src: url("../fonts/OpenSansRegular/OpenSansRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegular/OpenSansRegular.woff") format("woff"), url("../fonts/OpenSansRegular/OpenSansRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "OpenSansLight"; */
+@font-face {
+  font-family: "OpenSansLight";
+  src: url("../fonts/OpenSansLight/OpenSansLight.eot");
+  src: url("../fonts/OpenSansLight/OpenSansLight.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansLight/OpenSansLight.woff") format("woff"), url("../fonts/OpenSansLight/OpenSansLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "OpenSansItalic"; */
+@font-face {
+  font-family: "OpenSansItalic";
+  src: url("../fonts/OpenSansItalic/OpenSansItalic.eot");
+  src: url("../fonts/OpenSansItalic/OpenSansItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansItalic/OpenSansItalic.woff") format("woff"), url("../fonts/OpenSansItalic/OpenSansItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "OpenSansBold"; */
+@font-face {
+  font-family: "OpenSansBold";
+  src: url("../fonts/OpenSansBold/OpenSansBold.eot");
+  src: url("../fonts/OpenSansBold/OpenSansBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansBold/OpenSansBold.woff") format("woff"), url("../fonts/OpenSansBold/OpenSansBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "OpenSansExtraBold"; */
+@font-face {
+  font-family: "OpenSansExtraBold";
+  src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot");
+  src: url("../fonts/OpenSansExtraBold/OpenSansExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansExtraBold/OpenSansExtraBold.woff") format("woff"), url("../fonts/OpenSansExtraBold/OpenSansExtraBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "OpenSansExtraBoldItalic"; */
+@font-face {
+  font-family: "OpenSansExtraBoldItalic";
+  src: url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.eot");
+  src: url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.woff") format("woff"), url("../fonts/OpenSansExtraBoldItalic/OpenSansExtraBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "OpenSansBoldItalic"; */
+@font-face {
+  font-family: "OpenSansBoldItalic";
+  src: url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot");
+  src: url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.woff") format("woff"), url("../fonts/OpenSansBoldItalic/OpenSansBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "OpenSansRegularItalic"; */
+@font-face {
+  font-family: "OpenSansRegularItalic";
+  src: url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.eot");
+  src: url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.woff") format("woff"), url("../fonts/OpenSansRegularItalic/OpenSansRegularItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "OpenSansSemiBold"; */
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot");
+  src: url("../fonts/OpenSansSemiBold/OpenSansSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansSemiBold/OpenSansSemiBold.woff") format("woff"), url("../fonts/OpenSansSemiBold/OpenSansSemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "OpenSansSemiBoldItalic"; */
+@font-face {
+  font-family: "OpenSansSemiBoldItalic";
+  src: url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot");
+  src: url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.woff") format("woff"), url("../fonts/OpenSansSemiBoldItalic/OpenSansSemiBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "MyriadProRegular"; */
+@font-face {
+  font-family: "MyriadProRegular";
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+  src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"), url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "MyriadProBold"; */
+@font-face {
+  font-family: "MyriadProBold";
+  src: url("../fonts/MyriadProBold/MyriadProBold.eot");
+  src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"), url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "MyriadProItalic"; */
+@font-face {
+  font-family: "MyriadProItalic";
+  src: url("../fonts/MyriadProItalic/MyriadProItalic.eot");
+  src: url("../fonts/MyriadProItalic/MyriadProItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProItalic/MyriadProItalic.woff") format("woff"), url("../fonts/MyriadProItalic/MyriadProItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "MyriadProSemiBold"; */
+@font-face {
+  font-family: "MyriadProSemiBold";
+  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
+  src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"), url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "MyriadProBoldItalic"; */
+@font-face {
+  font-family: "MyriadProBoldItalic";
+  src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot");
+  src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff"), url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/* font-family: "MyriadProSemiBoldItalic"; */
+@font-face {
+  font-family: "MyriadProSemiBoldItalic";
+  src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot");
+  src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff"), url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+/*@import reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none; }
+
+a img {
+  border: none; }
+
+a {
+  text-decoration: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+body {
+  font-family: "RalewayRegular", "OpenSansRegular", sans-serif, arial; }
+
+.fa {
+  font-family: "FontAwesome" !important; }
+
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1170px) {
+  .container .searchWrap {
+    margin: 31px 0px 0 20px;
+    width: 40%; }
+  .container .shippingWrap {
+    margin: 30px 0px 0 5px;
+    width: 25%; }
+  .container .cartWrap .cartHeader {
+    font-size: 14px;
+    line-height: 25px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .hide992 {
+    display: none; }
+  .container .rightPanel .chatWrap {
+    padding: 0 15px 0 0; }
+  .container .furnitureWrap .furnitureHeader {
+    font-size: 25px; }
+  .container .furnitureWrap .furnitureWrapDescription {
+    font-size: 11px;
+    letter-spacing: 2px; }
+  .container .searchWrap {
+    margin: 31px 0px 0 10px;
+    width: 35%; }
+    .container .searchWrap .searchBtn {
+      width: 75px; }
+  .container .shippingWrap {
+    margin: 30px 0px 0 5px;
+    width: 25%; }
+    .container .shippingWrap .fa-truck {
+      font-size: 20px;
+      margin: 0 5px 0 0; }
+    .container .shippingWrap .shippingText .shippingHeader {
+      font-size: 15px; }
+    .container .shippingWrap .shippingText .shippingDesc {
+      font-size: 12px; }
+  .container .cartWrap {
+    width: 150px; }
+    .container .cartWrap .cartHeader {
+      font-size: 12px;
+      line-height: 25px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .hide992 {
+    display: inline; }
+  .container .rightPanel {
+    margin: 10px 0 0 0; }
+  .header .logInPanel .container {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  #headLine .container {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    #headLine .container .furnitureWrap {
+      width: 30%;
+      -webkit-box-ordinal-group: 3;
+      -webkit-order: 2;
+          -ms-flex-order: 2;
+              order: 2; }
+    #headLine .container .searchWrap {
+      width: 100%;
+      margin: 10px 30px;
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1; }
+      #headLine .container .searchWrap .searchForm {
+        margin: 0 auto; }
+      #headLine .container .searchWrap::after {
+        content: "";
+        width: 0px; }
+    #headLine .container .shippingWrap {
+      width: 35%;
+      -webkit-box-ordinal-group: 4;
+      -webkit-order: 3;
+          -ms-flex-order: 3;
+              order: 3; }
+    #headLine .container .cartWrap {
+      width: 25%;
+      -webkit-box-ordinal-group: 5;
+      -webkit-order: 4;
+          -ms-flex-order: 4;
+              order: 4; } }
+
+@media only screen and (max-width: 530px) {
+  #headLine .container .furnitureWrap {
+    width: 100%;
+    text-align: center;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 5px 0; }
+  #headLine .container .searchWrap {
+    width: 100%;
+    margin: 5px 20px;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  #headLine .container .shippingWrap {
+    width: 50%;
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3; }
+  #headLine .container .cartWrap {
+    width: 40%;
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+        -ms-flex-order: 4;
+            order: 4; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .hide480 {
+    display: none; }
+  .container .leftPanel .mainRightMenu > li {
+    margin: 0 2px; } }
+
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
+/*@import var and mixin*/
+/*colors*/
+.strong {
+  font-family: "RalewayExtraBold"; }
+
+.big {
+  text-transform: uppercase; }
+
+.blue {
+  color: #279cc7; }
+
+.active {
+  background: #279cc7; }
+
+.hot, .new {
+  position: relative; }
+  .hot::after, .new::after {
+    content: "HOT";
+    display: block;
+    width: 25px;
+    height: 12px;
+    background: #e13131;
+    color: #fff;
+    font-family: "MyriadProRegular";
+    font-size: 8px;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    letter-spacing: .1px;
+    text-align: center;
+    line-height: 12px; }
+
+.new::after {
+  content: "NEW";
+  background: #279cc7; }
+
+/*======================
+|		STYLE MAP      |
+========================
+
+0. common
+1. header
+	1.1. logPanel
+	1.2. headLine
+	1.3. mainMenuLine
+	1.4. slider
+2. 
+3. 
+4. 
+5. 
+6. 
+7. 
+8. 
+9. 
+
+======================*/
+/*0. common*/
+.container {
+  max-width: 1170px;
+  min-width: 420px;
+  margin: 0 auto; }
+
+/*===========================================================
+
+1. header
+============================================================*/
+/*1.1. logPanel
+___________________________________________________________*/
+.logInPanel {
+  padding: 10px 0 13px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 12px; }
+  .logInPanel .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .logInPanel a,
+  .logInPanel i {
+    color: #484848; }
+
+.fa-sort-desc {
+  position: relative;
+  top: -3px; }
+
+.logPanelInner {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 13px 0 0; }
+  .logPanelInner:last-child {
+    padding: 0; }
+
+.leftPanel .mainRightMenu > li {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 12px; }
+  .leftPanel .mainRightMenu > li:first-child {
+    margin: 0px; }
+  .leftPanel .mainRightMenu > li img {
+    position: absolute;
+    left: 5px; }
+  .leftPanel .mainRightMenu > li:hover a,
+  .leftPanel .mainRightMenu > li:hover i {
+    color: #279cc7; }
+
+.leftPanel .mainRightMenu .selectMenu {
+  position: relative; }
+  .leftPanel .mainRightMenu .selectMenu > a {
+    padding: 0 0 10px 0; }
+
+.leftPanel .subMenu {
+  position: absolute;
+  background: #fff;
+  margin: 10px 0 0 0;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+  z-index: 10;
+  display: none; }
+  .leftPanel .subMenu a {
+    padding: 5px 10px;
+    display: block;
+    width: 100%; }
+  .leftPanel .subMenu:hover a {
+    color: #484848; }
+  .leftPanel .subMenu li:hover {
+    background: #279cc7; }
+    .leftPanel .subMenu li:hover a {
+      color: #fff; }
+
+.leftPanel .langMenu a {
+  margin: 0 0 0 25px; }
+
+.leftPanel .langMenu .subMenu a {
+  margin: 0 0 0 15px; }
+
+.leftPanel .accountMenu .subMenu {
+  width: 130px;
+  left: 0px; }
+
+.rightPanel .fa {
+  font-size: 18px;
+  line-height: 12px; }
+
+.rightPanel .chatWrap {
+  padding: 0 45px 0 0; }
+
+.rightPanel .callUs {
+  letter-spacing: 0.2px; }
+
+.rightPanel a:hover,
+.rightPanel a:hover i {
+  color: #279cc7; }
+
+/*1.2. headLine
+___________________________________________________________*/
+.headLine .container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.furnitureWrap {
+  margin: 23px 0 0 2px; }
+
+.furnitureHeader {
+  text-transform: uppercase;
+  font-size: 34px;
+  font-family: "RalewayBlack"; }
+
+.furnitureWrapDescription {
+  font-size: 14px;
+  color: #969696;
+  letter-spacing: 3px; }
+
+.searchWrap {
+  margin: 31px 0px 0 40px;
+  width: 41%;
+  position: relative; }
+  .searchWrap .searchForm {
+    width: 90%;
+    min-width: 200px;
+    position: relative; }
+  .searchWrap .fa-search {
+    width: 42px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #f5f5f5;
+    color: #828282;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    z-index: 5; }
+    .searchWrap .fa-search::after {
+      content: "";
+      display: block;
+      background: #dadada;
+      position: absolute;
+      width: 1px;
+      height: 30px;
+      top: 5px;
+      right: 0; }
+  .searchWrap #search {
+    width: 100%;
+    height: 42px;
+    line-height: 40px;
+    background: #f5f5f5;
+    color: #828282;
+    font-size: 12px;
+    letter-spacing: -.4px;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+    border-right: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0 100px 0 57px;
+    position: relative; }
+    .searchWrap #search:focus, .searchWrap #search:active {
+      -webkit-box-shadow: 0 0 7px rgba(39, 156, 199, 0.4);
+              box-shadow: 0 0 7px rgba(39, 156, 199, 0.4);
+      border-top: 1px solid #279cc7;
+      border-bottom: 1px solid #279cc7;
+      border-left: 1px solid #279cc7; }
+  .searchWrap .searchBtn {
+    width: 92px;
+    height: 42px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-family: "RalewayBold";
+    background: #279cc7;
+    border: none;
+    position: absolute;
+    right: 0px;
+    top: 0px; }
+  .searchWrap::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 80px;
+    background: #dadada;
+    position: absolute;
+    right: 0;
+    top: -20px; }
+
+.shippingWrap {
+  margin: 30px 0px 0 30px;
+  width: 21%; }
+  .shippingWrap .fa-truck {
+    color: #279cc7;
+    font-size: 30px;
+    display: inline-block;
+    margin: 0 10px 0 0; }
+  .shippingWrap .shippingText {
+    display: inline-block; }
+    .shippingWrap .shippingText .shippingHeader {
+      color: #444;
+      font-size: 18px;
+      font-family: "lobsterTwo", "LobsterRegular"; }
+    .shippingWrap .shippingText .shippingDesc {
+      color: #999;
+      font-size: 14px;
+      letter-spacing: -.2px;
+      position: relative;
+      top: 5px; }
+
+.cartWrap {
+  text-align: center;
+  -webkit-flex-shrink: 1;
+      -ms-flex-negative: 1;
+          flex-shrink: 1;
+  background: #279cc7;
+  position: relative;
+  color: #fff;
+  width: 170px;
+  /*popup window*/ }
+  .cartWrap .fa-shopping-cart {
+    font-size: 24px;
+    display: block; }
+  .cartWrap .cartHeader {
+    display: block;
+    font-size: 14px;
+    font-family: "RalewayBlack";
+    text-transform: uppercase;
+    line-height: 30px; }
+  .cartWrap .goodsNumber {
+    display: block;
+    font-size: 12px; }
+  .cartWrap .cartMainDiv {
+    padding: 19px 0; }
+    .cartWrap .cartMainDiv:hover .cartPopup {
+      display: block; }
+  .cartWrap .socialMenu {
+    width: 100%;
+    background: #414141;
+    height: 50px;
+    position: absolute;
+    top: 100%; }
+    .cartWrap .socialMenu .socMenuList {
+      text-align: center; }
+      .cartWrap .socialMenu .socMenuList .socMenuItem {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 50px; }
+        .cartWrap .socialMenu .socMenuList .socMenuItem a {
+          color: #fff;
+          margin: 0 4px; }
+          .cartWrap .socialMenu .socMenuList .socMenuItem a:hover {
+            color: #279cc7; }
+  .cartWrap .cartPopup {
+    display: none;
+    z-index: 100;
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+    background: #fff;
+    width: 360px;
+    padding: 17px;
+    /*cartItems*/ }
+    .cartWrap .cartPopup .addedItems {
+      font-size: 12px;
+      color: #484848;
+      text-align: left;
+      text-transform: capitalize; }
+    .cartWrap .cartPopup .cartItems {
+      border-top: 1px solid #dadada;
+      margin: 12px 0;
+      /*cartItem1*/ }
+      .cartWrap .cartPopup .cartItems .cartItem1 {
+        border-bottom: 1px solid #dadada;
+        padding: 14px 0;
+        font-size: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+        .cartWrap .cartPopup .cartItems .cartItem1 .itemImg {
+          border: 1px solid #dadada;
+          width: 90px;
+          height: 90px; }
+        .cartWrap .cartPopup .cartItems .cartItem1 .itemDisc {
+          text-align: left;
+          -webkit-flex-basis: 55%;
+              -ms-flex-preferred-size: 55%;
+                  flex-basis: 55%; }
+          .cartWrap .cartPopup .cartItems .cartItem1 .itemDisc .itemHeader {
+            font-size: 14px;
+            font-family: "RalewayBlack";
+            color: #484848;
+            line-height: 25px;
+            text-transform: uppercase; }
+          .cartWrap .cartPopup .cartItems .cartItem1 .itemDisc .stars {
+            margin: 0 0 8px 0; }
+            .cartWrap .cartPopup .cartItems .cartItem1 .itemDisc .stars .fa-star {
+              color: #ff9600;
+              font-size: 12px; }
+            .cartWrap .cartPopup .cartItems .cartItem1 .itemDisc .stars .rewies {
+              color: #999;
+              font-size: 12px;
+              margin: 0 0 0 15px; }
+          .cartWrap .cartPopup .cartItems .cartItem1 .itemDisc .priceAndNum .price {
+            font-family: "OpenSansBold";
+            color: #e13131;
+            font-size: 16px;
+            display: inline-block;
+            vertical-align: middle; }
+          .cartWrap .cartPopup .cartItems .cartItem1 .itemDisc .priceAndNum .qty {
+            color: #999;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 12px;
+            margin: 0 6px 0 30px; }
+          .cartWrap .cartPopup .cartItems .cartItem1 .itemDisc .priceAndNum .itemNum {
+            background: #f2f2f2;
+            width: 50px;
+            height: 40px;
+            border: 1px solid #dadada;
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 14px;
+            color: #484848;
+            text-align: center;
+            line-height: 40px; }
+        .cartWrap .cartPopup .cartItems .cartItem1 .cartItemControl {
+          color: #c5c5c5;
+          font-size: 14px; }
+          .cartWrap .cartPopup .cartItems .cartItem1 .cartItemControl .fa-pencil {
+            margin: 0 5px 0 0; }
+          .cartWrap .cartPopup .cartItems .cartItem1 .cartItemControl .fa {
+            cursor: pointer; }
+    .cartWrap .cartPopup .total {
+      text-align: left;
+      border-bottom: 1px solid #dadada;
+      padding: 0 0 15px 0;
+      margin: 0 0 15px 0; }
+      .cartWrap .cartPopup .total .cartTotalText {
+        font-size: 12px;
+        color: #484848;
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 34px 0 0; }
+      .cartWrap .cartPopup .total .cartTotal {
+        font-family: "OpenSansBold";
+        color: #279cc7;
+        font-size: 16px;
+        display: inline-block;
+        vertical-align: middle; }
+    .cartWrap .cartPopup .cartBtns {
+      font-size: 0; }
+      .cartWrap .cartPopup .cartBtns .cartBtn {
+        color: #fff;
+        background: #279cc7;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-family: "RalewayBlack";
+        display: inline-block;
+        vertical-align: middle;
+        width: 170px;
+        height: 37px;
+        line-height: 37px; }
+        .cartWrap .cartPopup .cartBtns .cartBtn:hover {
+          background: #1986ae; }
+      .cartWrap .cartPopup .cartBtns .fa {
+        font-size: 14px;
+        display: inline-block; }
+      .cartWrap .cartPopup .cartBtns .viewBtn1 {
+        margin: 0 20px 0 0; }
+
+/*
+1.3. mainMenuLine
+___________________________________________________________*/
+.mainMenuLine {
+  background-color: rgba(22, 22, 22, 0.9); }
+  .mainMenuLine .container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .mainMenuLine .mainMenuNav {
+    -webkit-flex-basis: 65%;
+        -ms-flex-preferred-size: 65%;
+            flex-basis: 65%; }
+    .mainMenuLine .mainMenuNav .mainMenuList {
+      font-size: 0px; }
+      .mainMenuLine .mainMenuNav .mainMenuList .mainMenuItem {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative; }
+        .mainMenuLine .mainMenuNav .mainMenuList .mainMenuItem > a {
+          color: #fff;
+          font-size: 14px;
+          font-family: "RalewayBlack";
+          text-transform: uppercase;
+          padding: 17px 24px;
+          line-height: 24px; }
+          .mainMenuLine .mainMenuNav .mainMenuList .mainMenuItem > a:hover {
+            background: #279cc7; }
+        .mainMenuLine .mainMenuNav .mainMenuList .mainMenuItem .fa {
+          font-size: 24px;
+          padding: 13px 24px; }
+        .mainMenuLine .mainMenuNav .mainMenuList .mainMenuItem .features {
+          padding: 17px 24px 17px 30px; }
+        .mainMenuLine .mainMenuNav .mainMenuList .mainMenuItem .livingRoom {
+          padding: 17px 24px 17px 15px; }
+        .mainMenuLine .mainMenuNav .mainMenuList .mainMenuItem .badrooms {
+          padding: 17px 24px 17px 18px; }
+        .mainMenuLine .mainMenuNav .mainMenuList .mainMenuItem .blog {
+          padding: 17px 35px 17px 33px; }

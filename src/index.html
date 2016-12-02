@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Furniture</title>
+	<link rel="shortcut icon" href="img/favicon.png" />
+	<meta name="description" content="" /> <!-- !!! -->
+	<meta http equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/libs.min.css" />
+	<link rel="stylesheet" href="css/style.min.css" />
+	<link rel="stylesheet" href="fonts/fontAwesome/css/font-awesome.css" />
+	<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+<div class="wrapper">
+		
+	<!-- ================
+	
+			HEADER
+	
+	================ -->
+	<header class="header">
+		
+	
+	
+		<!-- ====logPanel===== -->
+		<div class="logInPanel">
+				
+			<div class="container">
+				<div class="leftPanel">
+					
+					<div class="logPanelInner moneyWrap">
+						<ul class="mainRightMenu">
+							<li class="selectMenu moneyMenu">
+								<a href="#">USD</a>
+								<ul class="subMenu hide moneySubSelect">
+									<li class="uah"><a href="#">UAH</a></li>
+									<li calss="eur"><a href="#">EUR</a></li>
+									<li calss="usd"><a href="#">USD</a></li>
+								</ul>
+							</li>
+							
+							<li class="selectMenu langMenu"><a href="#">
+								<img src="img/flag-en.png" alt="flag"> 
+								English
+							</a>
+								<ul class="subMenu hide langSubSelect">
+									<li class="eng"><a href="#">
+										<img src="img/flag-en.png" alt="flag">
+										English
+									</a></li>
+									<li><a href="#">
+										<img src="img/flag-fr.png" alt="flag">
+										French</a>
+									</li>
+									<li><a href="#">
+										<img src="img/flag-gr.png" alt="flag">
+										German</a>
+									</li>
+									<li><a href="#">
+										<img src="img/flag-ag.png" alt="flag">
+										Argentina</a>
+									</li>
+									<li><a href="#">
+										<img src="img/flag-bl.png" alt="flag">
+										Bolivia</a>
+									</li>
+								</ul>
+							</li>
+							
+							<li class="selectMenu accountMenu"><a href="#">
+								 my Account 
+							</a>
+								<ul class="subMenu hide">
+									<li><a href="#">my Account</a></li>
+									<li><a href="#">My Wishlist</a></li>
+									<li><a href="#">My Osders</a></li>
+									<li><a href="#">Address Book</a></li>
+									<li><a href="#">My Tags</a></li>
+									<li><a href="#">Billing Agreements</a></li>
+									<li><a href="#">Recurring Profiles</a></li>
+								</ul>
+							</li>
+							
+							<li>
+								<a class="wishList" href="#">
+									<i class="fa fa-heart" aria-hidden="true"></i>
+									My Wishlist
+								</a>
+							</li>
+							<li>
+								<a class="login" href="#">
+									<i class="fa fa-lock" aria-hidden="true"></i>
+									Login
+								</a>
+							</li>
+						</ul>
+				
+					</div>
+				
+				</div> <!-- end leftPanel -->
+				
+				
+				<div class="rightPanel">
+					
+					<div class="logPanelInner chatWrap">
+						<a class="lifeChat" href="#">
+							<i class="fa fa-comment-o" aria-hidden="true"></i>
+							<span class="hide992 hide480">Start </span><span class="strong big">life chat</span>
+						</a>
+					</div>
+					
+					<div class="logPanelInner callWrap">
+						<a class="callUs" href="#">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							Call <span class="hide992 hide480">our c</span>us<span class="hide992 hide480">tumer service at</span>: <span class="strong">096-9998386</span>
+						</a>
+					</div>
+				
+				</div> <!-- end rightPanel -->
+				
+			</div> <!-- end container -->
+		</div> <!-- end logPanel -->
+
+	
+	
+	
+	
+		<!-- ====headLine===== -->
+		<div class="headLine" id="headLine">
+		
+			<div class="container">
+				<div class="headLineInner furnitureWrap">
+					<h2 class="blue furnitureHeader">furniture</h2>
+					<p class="furnitureWrapDescription">Home Furniture Store</p>
+				</div>
+				
+				<div class="headLineInner searchWrap">
+					<div class="searchForm">
+						<i class="fa fa-search" aria-hidden="true"></i>
+						<input type="text" name="search" placeholder="Enter your keyword..." id="search">
+						<button class="searchBtn">search</button>
+					</div>
+				</div>
+				
+				<div class="headLineInner shippingWrap">
+					<i class="fa fa-truck" aria-hidden="true"></i>
+					<div class="shippingText">
+						<h3 class="shippingHeader">Everyday Free Shipping</h3>
+						<p class="shippingDesc">& No Sales Tax</p>
+					</div>
+				</div>
+					
+				<div class="headLineInner cartWrap">
+					<div class="cartMainDiv">
+						<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+						<h3 class="cartHeader">My Cart</h3>
+						<p class="goodsNumber">1 item (s)</p>
+					
+					<!-- cart popup -->
+					<div class="cartPopup">
+						<p class="addedItems">Recently Added Item(s):</p>
+						<div class="cartItems">
+							<div class="cartItem1">
+
+								<div class="itemImg">
+									<img src="img/prod-min-2.jpg" alt="my item">
+								</div>
+
+								<div class="itemDisc">
+									<h3 class="itemHeader">Gazenas mutre</h3>
+									<div class="stars">
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<i class="fa fa-star" aria-hidden="true"></i>
+										<span class="rewies">2 Review (s)</span>
+									</div>
+									<div class="priceAndNum">
+										<p class="price">$65.00</p>
+										<span class="qty">Qty</span>
+										<a class="itemNum" href="#">1</a>
+									</div>
+								</div>
+
+								<div class="cartItemControl">
+									<i class="fa fa-pencil" aria-hidden="true"></i>
+									<i class="fa fa-times" aria-hidden="true"></i>
+								</div>
+							</div><!-- cartItem1 -->
+						</div><!-- cartItems -->
+					
+						<div class="total">
+							<p class="cartTotalText">Cart subtotal:</p>
+							<p class="cartTotal">$65.00</p>
+						</div>
+						<div class="cartBtns">
+							<a href="#" class="cartBtn viewBtn1">
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i> view cart
+							</a>
+							<a href="#" class="cartBtn viewBtn2">
+								<i class="fa fa-check-square-o" aria-hidden="true"></i> view cart
+							</a>
+						</div>
+
+					</div> <!-- cartPopup -->
+					</div>
+					<!-- social menu -->
+					<div class="socialMenu">
+						<ul class="socMenuList">
+							<li class="socMenuItem">
+								<a href="#" class="fa fa-facebook" aria-hidden="true"></a>
+							</li>
+							<li class="socMenuItem">
+								<a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+							</li>
+							<li class="socMenuItem">
+								<a href="#" class="fa fa-linkedin" aria-hidden="true"></a>
+							</li>
+							<li class="socMenuItem">
+								<a href="#" class="fa fa-google-plus" aria-hidden="true"></a>
+							</li>
+							<li class="socMenuItem">
+								<a href="#" class="fa fa-pinterest" aria-hidden="true"></a>
+							</li>
+						</ul>
+					</div>
+
+
+				</div> <!-- cartWrap -->
+			</div> <!-- container -->
+		</div> <!-- headLine -->
+	
+	
+
+
+
+
+	
+		<!-- ====mainMenuLine===== -->
+		<div class="mainMenuLine">
+			
+			<div class="container">
+				<nav class="mainMenuNav">
+					<ul class="mainMenuList">
+						<li class="mainMenuItem active">
+							<a class="home fa fa-home" aria-hidden="true" href="#"></a>
+						</li>
+						<li class="mainMenuItem">
+							<a href="#"class="features hot">Features</a>
+						</li>
+						<li class="mainMenuItem ">
+							<a href="#" class="livingRoom">Living room</a>
+						</li>
+						<li class="mainMenuItem">
+							<a href="#" class="badrooms new">Bedrooms</a>
+							<ul class="subMinuBadrooms">
+								<li class="firstSubMenu">
+									<a href="#">Accessories</a>
+								</li>
+								<li>
+									<a href="#">Mattresses</a>
+								</li>
+								<li>
+									<a href="#">Quilts & Coverlets</a>
+								</li>
+								<li>
+									<a href="#">Mattress Pads</a>
+								</li>
+								<li>
+									<a href="#">Dressers & Chests</a>
+								</li>
+								<li>
+									<a href="#">Nightstands</a>
+								</li>
+								<li>
+									<a href="#">Duvet Fills</a>
+								</li>
+								<li>
+									<a href="#">Shower Heads</a>
+								</li>
+
+							</ul>
+						</li>
+						<li class="mainMenuItem">
+							<a href="#" class="blog">blog</a>
+						</li>
+						<li class="mainMenuItem">
+							<a href="#" class="contactUs">Contact us</a>
+						</li>
+					</ul>
+				</nav>
+				
+				
+			</div> <!-- container -->
+		</div> <!-- mainMenuLine -->
+	
+		<!-- ====slider===== -->
+		<div class="slider">
+			<div class="slide1">
+				<h2 class="compName">Livingroom</h2>
+				<h1 class="sliderHead">Collection</h1>
+				<a href="#" class="shopBtn">Shop now</a>
+			</div>
+			<div class="slide2">
+				<h2 class="compName">Furniture</h2>
+				<p class="compDesc">Survive The Reality Of Everyday Life</p>
+				<h1 class="sliderHead">Collection</h1>
+				<a href="#" class="shopBtn">Shop now</a>
+			</div>
+			<div class="slide3">
+				<h2 class="compName">Furniture</h2>
+				<p class="compDesc">Survive The Reality Of Everyday Life</p>
+				<h1 class="sliderHead">Collection</h1>
+				<a href="#" class="shopBtn">Shop now</a>
+			</div>
+		</div>
+	</header>
+	
+	<!-- ================
+	
+			MAIN
+	
+	================ -->
+	<main>
+		<!-- ====SECTION DealsSaleProducts===== -->
+		<section class="DealsSaleProducts">
+			
+			<!-- ====deals===== -->
+			<div class="deals">
+				<h3 class="dealsHeader"><span class="strong">Deals</span>  of the day</h3>
+				<p>Mauris ut tincidunt nisi, id auctor libero. Etiam aliquet felis et consectetur faucibus. Praesent aliquam, lec tempus consequat,deserunt jowl prosciutto boudin.</p>
+				<article>
+					<figure>
+						<img src="#" alt="living room">
+						<figcaption>living room</figcaption>
+					</figure>
+				</article>
+				<article>
+					<figure>
+						<img src="#" alt="kitchen">
+						<figcaption>kitchen</figcaption>
+					</figure>
+				</article>
+				<article>
+					<figure>
+						<img src="#" alt="work place">
+						<figcaption>work place</figcaption>
+					</figure>
+				</article>
+				<article>
+					<figure>
+						<img src="#" alt="wardrobe">
+						<figcaption>wardrobe</figcaption>
+					</figure>
+				</article>
+			</div>
+	
+			<!-- ====sale===== -->
+			<div class="sale">
+				<article>
+					<div class="saleDate">
+						<p>595 <span>days</span></p>
+						<p>14 <span>hours</span></p>
+						<p>36 <span>mins</span></p>
+						<p>12 <span>sec</span></p>
+					</div>
+					<figure>
+						<img src="#" alt="Auzan mipane">
+						<figcaption>Auzan mipane</figcaption>
+						<p class="price"><span class="oldPrice">$95.00</span> $80.00</p>
+						<p class="stars">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+							<i class="fa fa-star-o" aria-hidden="true"></i>
+						</p>
+					</figure>
+					<a href="#" class="prevBtn"><</a>
+					<a href="#" class="nextBtn">></a>
+				</article>
+			</div>
+			
+			<!-- ====products===== -->
+			<div class="products">
+				<h3 class="productsHeader">Popular products</h3>
+				<article>
+					<figure>
+						<img src="#" alt="Kazens dimans">
+						<figcaption>Kazens dimans</figcaption>
+						<p class="stars">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</p>
+						<p class="price">$80.00</p>
+	
+					</figure>
+				</article>
+				<article>
+					<figure>
+						<img src="#" alt="Gazenas mutre">
+						<figcaption>Gazenas mutre</figcaption>
+						<p class="stars">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</p>
+						<p class="price">$65.00</p>
+	
+					</figure>
+				</article>
+				<article>
+					<figure>
+						<img src="#" alt="Gazenas mitra">
+						<figcaption>Gazenas mitra</figcaption>
+						<p class="stars">
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+							<i class="fa fa-star" aria-hidden="true"></i>
+						</p>
+						<p class="price">$84.00</p>
+	
+					</figure>
+				</article>
+			</div>
+			
+		</section>
+	</main>
+	
+	<!-- ================
+	
+			ASIDE
+	
+	================ -->
+	<aside></aside>
+	
+	<!-- aside2 -->
+	<aside></aside>
+	
+	<!-- ================
+	
+			FOOTER
+	
+	================ -->
+	<footer></footer>
+</div>
+
+<!-- ================
+
+		SCRIPTS
+
+================ -->
+
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>	
+
+<!-- ================
+
+		TEMPLATE
+
+================ -->
+<script type="text/template">
+
+</script>
+
+	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

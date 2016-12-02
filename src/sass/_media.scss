@@ -1,0 +1,239 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+@media only screen and (max-width : 1170px) {
+
+	.container{
+
+		.searchWrap{
+			margin: 31px 0px 0 20px;
+			width: 40%;
+		}
+
+		.shippingWrap{
+			margin: 30px 0px 0 5px;
+			width: 25%;
+		}
+
+		.cartWrap{
+			.cartHeader{
+				font-size: 14px;
+				line-height: 25px;
+			}
+		} 
+	}
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+	.hide992{
+		display: none;
+	}
+
+	.container{
+		.rightPanel{
+			.chatWrap{
+				padding: 0 15px 0 0;
+			}
+		}
+	}
+
+	.container{
+
+		.furnitureWrap{
+
+			.furnitureHeader{
+				font-size: 25px;
+			}
+
+			.furnitureWrapDescription{
+				font-size: 11px;
+				letter-spacing: 2px;
+			}
+
+		}
+
+
+		.searchWrap{
+			margin: 31px 0px 0 10px;
+			width: 35%;
+			.searchBtn{
+				width: 75px;
+			}
+		}
+
+		.shippingWrap{
+			margin: 30px 0px 0 5px;
+			width: 25%;
+			.fa-truck{
+				font-size: 20px;
+				margin: 0 5px 0 0;
+			}
+			.shippingText{
+				.shippingHeader{
+					font-size: 15px;
+				}
+				.shippingDesc{
+					font-size: 12px;
+				}
+			}
+		}
+
+		.cartWrap{
+			width: 150px;
+			.cartHeader{
+				font-size: 12px;
+				line-height: 25px;
+			}
+		} 
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	.hide992{
+		display: inline;
+	}
+	.container{
+		.rightPanel{
+			margin: 10px 0 0 0;
+		}
+	}
+	.header{
+		.logInPanel{
+			.container{
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+		}
+	}
+
+
+	#headLine{
+		.container{
+			flex-wrap: wrap;
+
+
+			.furnitureWrap{
+				width: 30%;
+				order: 2;
+			}
+			.searchWrap{
+				width: 100%;
+				margin: 10px 30px;
+				order: 1;
+				.searchForm{
+					margin: 0 auto;
+				}
+				&::after{
+					content: "";
+					width: 0px;
+				}
+			}
+
+			.shippingWrap{
+				width: 35%;
+				order: 3;
+			}
+
+			.cartWrap{
+				width: 25%;
+				order: 4;
+			}
+
+		}
+	}
+
+
+}
+
+@media only screen and (max-width : 530px) {
+
+	#headLine{
+		.container{
+			.furnitureWrap{
+				width: 100%;
+				text-align: center;
+				order: 1;
+				margin: 5px 0;
+			}
+			.searchWrap{
+				width: 100%;
+				margin: 5px 20px;
+				order: 2;
+			}
+
+			.shippingWrap{
+				width: 50%;
+				order: 3;
+			}
+
+			.cartWrap{
+				width: 40%;
+				order: 4;
+			}
+
+		}
+	}
+
+
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.hide480{
+		display: none;
+	}
+
+	.container{
+		.leftPanel{
+			.mainRightMenu{
+				>li{
+					margin: 0 2px;
+				}
+			}
+		}
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

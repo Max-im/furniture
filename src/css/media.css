@@ -1,0 +1,139 @@
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1170px) {
+  .container .searchWrap {
+    margin: 31px 0px 0 20px;
+    width: 40%; }
+  .container .shippingWrap {
+    margin: 30px 0px 0 5px;
+    width: 25%; }
+  .container .cartWrap {
+    padding: 19px 3%; }
+    .container .cartWrap .cartHeader {
+      font-size: 14px;
+      line-height: 25px; } }
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .hide992 {
+    display: none; }
+  .container .rightPanel .chatWrap {
+    padding: 0 15px 0 0; }
+  .container .furnitureWrap .furnitureHeader {
+    font-size: 25px; }
+  .container .furnitureWrap .furnitureWrapDescription {
+    font-size: 11px;
+    letter-spacing: 2px; }
+  .container .searchWrap {
+    margin: 31px 0px 0 10px;
+    width: 35%; }
+    .container .searchWrap .searchBtn {
+      width: 75px; }
+  .container .shippingWrap {
+    margin: 30px 0px 0 5px;
+    width: 25%; }
+    .container .shippingWrap .fa-truck {
+      font-size: 20px;
+      margin: 0 5px 0 0; }
+    .container .shippingWrap .shippingText .shippingHeader {
+      font-size: 15px; }
+    .container .shippingWrap .shippingText .shippingDesc {
+      font-size: 12px; }
+  .container .cartWrap {
+    padding: 19px 30px; }
+    .container .cartWrap .cartHeader {
+      font-size: 12px;
+      line-height: 25px; } }
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .hide992 {
+    display: inline; }
+  .container .rightPanel {
+    margin: 10px 0 0 0; }
+  .header .logInPanel .container {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  #headLine .container {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    #headLine .container .furnitureWrap {
+      width: 30%;
+      -webkit-box-ordinal-group: 3;
+      -webkit-order: 2;
+          -ms-flex-order: 2;
+              order: 2; }
+    #headLine .container .searchWrap {
+      width: 100%;
+      margin: 10px 30px;
+      -webkit-box-ordinal-group: 2;
+      -webkit-order: 1;
+          -ms-flex-order: 1;
+              order: 1; }
+      #headLine .container .searchWrap .searchForm {
+        margin: 0 auto; }
+      #headLine .container .searchWrap::after {
+        content: "";
+        width: 0px; }
+    #headLine .container .shippingWrap {
+      width: 35%;
+      -webkit-box-ordinal-group: 4;
+      -webkit-order: 3;
+          -ms-flex-order: 3;
+              order: 3; }
+    #headLine .container .cartWrap {
+      width: 15%;
+      -webkit-box-ordinal-group: 5;
+      -webkit-order: 4;
+          -ms-flex-order: 4;
+              order: 4; } }
+
+@media only screen and (max-width: 530px) {
+  #headLine .container .furnitureWrap {
+    width: 100%;
+    text-align: center;
+    -webkit-box-ordinal-group: 2;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    margin: 5px 0; }
+  #headLine .container .searchWrap {
+    width: 100%;
+    margin: 5px 20px;
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2; }
+  #headLine .container .shippingWrap {
+    width: 50%;
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3; }
+  #headLine .container .cartWrap {
+    width: 30%;
+    -webkit-box-ordinal-group: 5;
+    -webkit-order: 4;
+        -ms-flex-order: 4;
+            order: 4; } }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .hide480 {
+    display: none; }
+  .container .leftPanel .mainRightMenu > li {
+    margin: 0 2px; } }
+
+/* Custom, iPhone Retina */
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+/* Extra Small Devices, Phones */
+/* Small Devices, Tablets */
+/* Medium Devices, Desktops */
+/* Large Devices, Wide Screens */
