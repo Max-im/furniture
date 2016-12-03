@@ -305,7 +305,9 @@ body {
     width: 230px;
     height: 400px; }
     .mainMenuLine .container .mainMenuNav .mainMenuList .badroomsMenuItem .subMenuBadroomsWrap .goods:last-child {
-      margin: 10px 10px 10px 0; } }
+      margin: 10px 10px 10px 0; }
+  .container .featuresMenuSubmenuWrap {
+    left: -50px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -339,10 +341,23 @@ body {
     width: 150px; }
     .container .cartWrap .cartHeader {
       font-size: 12px;
-      line-height: 25px; } }
+      line-height: 25px; }
+  .container .livingroomMenuSubmenuWrap {
+    padding: 15px 10px 10px 10px; }
+    .container .livingroomMenuSubmenuWrap .livingroomSubmenu .livingroomSubmenuItem {
+      -webkit-flex-basis: 33%;
+          -ms-flex-preferred-size: 33%;
+              flex-basis: 33%; }
+    .container .livingroomMenuSubmenuWrap a {
+      padding: 5px 0; }
+    .container .livingroomMenuSubmenuWrap .banner {
+      width: 520px;
+      margin: 10px 0 0 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .hide768 {
+    display: none; }
   .hide992 {
     display: inline; }
   .container .rightPanel {
@@ -388,7 +403,24 @@ body {
       -webkit-box-ordinal-group: 5;
       -webkit-order: 4;
           -ms-flex-order: 4;
-              order: 4; } }
+              order: 4; }
+  .container .livingroomMenuSubmenuWrap {
+    padding: 10px;
+    width: 180px; }
+    .container .livingroomMenuSubmenuWrap .livingroomSubmenu {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      .container .livingroomMenuSubmenuWrap .livingroomSubmenu .livingroomSubmenuItem {
+        -webkit-flex-basis: 100%;
+            -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+        border-bottom: 1px solid #dadada;
+        padding: 10px 0; } }
 
 @media only screen and (max-width: 530px) {
   #headLine .container .furnitureWrap {
@@ -488,6 +520,24 @@ body {
   font-size: 12px;
   color: #999;
   text-decoration: line-through; }
+
+.flex, .mainMenuLine .subMenuBadroomsWrap .flexWrap, .livingroomMenuSubmenuWrap .livingroomSubmenu, .featuresMenuSubmenuWrap .flexWrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 /*======================
 |		STYLE MAP      |
@@ -602,7 +652,7 @@ ___________________________________________________________*/
   margin: 0 0 0 15px; }
 
 .leftPanel .accountMenu .subMenu {
-  width: 130px;
+  width: 150px;
   left: 0px; }
 
 .rightPanel .fa {
@@ -777,8 +827,6 @@ ___________________________________________________________*/
     font-size: 12px; }
   .cartWrap .cartMainDiv {
     padding: 19px 0; }
-    .cartWrap .cartMainDiv:hover .cartPopup {
-      display: block; }
   .cartWrap .socialMenu {
     width: 100%;
     background: #414141;
@@ -982,12 +1030,8 @@ ___________________________________________________________*/
       .mainMenuLine .mainMenuNav .mainMenuList .badroomsMenuItem:hover .badrooms::after {
         content: "";
         width: 0; }
-      .mainMenuLine .mainMenuNav .mainMenuList .badroomsMenuItem:hover .subMenuBadroomsWrap {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex; }
   .mainMenuLine .subMenuBadroomsWrap {
+    display: none;
     z-index: 99;
     position: absolute;
     left: 0px;
@@ -996,31 +1040,23 @@ ___________________________________________________________*/
             box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
     background: #fff;
     max-width: 820px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-        -ms-flex-wrap: nowrap;
-            flex-wrap: nowrap;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    display: none; }
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .mainMenuLine .subMenuBadroomsWrap .flexWrap {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
     .mainMenuLine .subMenuBadroomsWrap .subMenuBadrooms {
-      width: 195px;
+      -webkit-flex-basis: 195px;
+          -ms-flex-preferred-size: 195px;
+              flex-basis: 195px;
       padding: 30px 25px 0 30px;
       background: #f2f2f2; }
       .mainMenuLine .subMenuBadroomsWrap .subMenuBadrooms .subMenuItem {
         color: #494949;
         padding: 10px 0;
         display: block; }
+        .mainMenuLine .subMenuBadroomsWrap .subMenuBadrooms .subMenuItem:hover {
+          color: #279cc7; }
     .mainMenuLine .subMenuBadroomsWrap .goods {
       margin: 30px;
       width: 270px;
@@ -1068,3 +1104,96 @@ ___________________________________________________________*/
           color: #279cc7;
           text-transform: uppercase;
           font-family: "RalewayBlack"; }
+
+.livingroomMenuSubmenuWrap {
+  display: none;
+  z-index: 90;
+  position: absolute;
+  left: 0px;
+  top: 37px;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+  background: #fff;
+  padding: 35px 30px 30px 30px; }
+  .livingroomMenuSubmenuWrap .livingroomSubmenu {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+    .livingroomMenuSubmenuWrap .livingroomSubmenu .livingroomSubmenuItem {
+      -webkit-flex-basis: 33%;
+          -ms-flex-preferred-size: 33%;
+              flex-basis: 33%; }
+  .livingroomMenuSubmenuWrap a {
+    display: block;
+    padding: 10px 0;
+    color: #494949; }
+    .livingroomMenuSubmenuWrap a:hover {
+      color: #279cc7; }
+  .livingroomMenuSubmenuWrap .banner {
+    width: 720px;
+    margin: 20px 0 0 0; }
+    .livingroomMenuSubmenuWrap .banner img {
+      width: 100%; }
+
+.featuresMenuSubmenuWrap {
+  display: none;
+  position: absolute;
+  left: -70px;
+  top: 37px;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+  background: #fff;
+  /*colorPickers*/ }
+  .featuresMenuSubmenuWrap .flexWrap {
+    padding: 30px 15px 35px 15px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem {
+      display: block;
+      -webkit-flex-basis: 20%;
+          -ms-flex-preferred-size: 20%;
+              flex-basis: 20%; }
+      .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem:nth-child(1) {
+        margin: 0 0 40px 0; }
+      .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem .headerTemp, .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem .mainMenuLine .subMenuBadroomsWrap .subMenuBadrooms .firstSubMenuItem, .mainMenuLine .subMenuBadroomsWrap .subMenuBadrooms .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem .firstSubMenuItem, .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem .mainMenuLine .subMenuBadroomsWrap .goods .goodsHeader, .mainMenuLine .subMenuBadroomsWrap .goods .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem .goodsHeader {
+        margin: 0 0 10px 0; }
+      .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem .featuresSMTextItem {
+        display: inline-block;
+        padding: 5px 0;
+        color: #494949; }
+        .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem .featuresSMTextItem:hover {
+          color: #279cc7; }
+  .featuresMenuSubmenuWrap .brown {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #925829;
+    margin: 0 5px 0 0; }
+  .featuresMenuSubmenuWrap .red {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #f64b00;
+    margin: 0 5px 0 0; }
+  .featuresMenuSubmenuWrap .green {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #80a439;
+    margin: 0 5px 0 0; }
+  .featuresMenuSubmenuWrap .orange {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #e9a105;
+    margin: 0 5px 0 0; }
+  .featuresMenuSubmenuWrap .blue {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #03a9f4;
+    margin: 0 5px 0 0; }

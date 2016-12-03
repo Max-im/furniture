@@ -74,6 +74,12 @@
 		}
 	}	
 
+	.container{
+		.featuresMenuSubmenuWrap{
+			left: -50px;
+		}
+	}
+
 
 }
 
@@ -142,7 +148,28 @@
 				font-size: 12px;
 				line-height: 25px;
 			}
-		} 
+		}
+
+
+		.livingroomMenuSubmenuWrap{
+			padding: 15px 10px 10px 10px;
+			.livingroomSubmenu{
+				.livingroomSubmenuItem{
+					flex-basis: 33%;
+				}
+			}
+			a{
+				padding: 5px 0;
+			}
+			.banner{
+				width: 520px;
+				margin: 10px 0 0 0;
+			}
+		}	
+	
+
+
+
 	}
 
 
@@ -152,6 +179,10 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+	.hide768{
+		display: none;
+	}
 
 	.hide992{
 		display: inline;
@@ -204,6 +235,22 @@
 			}
 
 		}
+	}
+
+	.container{
+		.livingroomMenuSubmenuWrap{
+			padding: 10px;
+			width: 180px;
+			.livingroomSubmenu{
+				justify-content: center;
+				flex-wrap: wrap;
+				.livingroomSubmenuItem{
+					flex-basis: 100%;
+					border-bottom: 1px solid #dadada;
+					padding: 10px 0;
+				}
+			}
+		}	
 	}
 
 

@@ -42,5 +42,31 @@ $(".selectMenu").on("click", function(e){
 })
 
 
+function bigMenuRwsizing() {
+  	var winLen = $('.container').innerWidth();
+  	$('.featuresMenuSubmenuWrap').width(winLen)
+}
+bigMenuRwsizing()
+$( window ).resize(bigMenuRwsizing);
+
+
+function makeHover(parentEl, childElem){
+	$(parentEl).hover(
+		function(){
+			$(childElem).fadeIn();
+		},
+		function(){
+			$(childElem).fadeOut();
+		}
+	);
+}
+
+makeHover('.badroomsMenuItem', '.subMenuBadroomsWrap');
+makeHover('.cartMainDiv', '.cartPopup');
+makeHover('.livingroomMenuItem', '.livingroomMenuSubmenuWrap');
+makeHover('.featuresMainMenuItem', '.featuresMenuSubmenuWrap');
+
+
+
 })(jQuery);
 

@@ -72,3 +72,10 @@ $newColor: #03a9f4;
 	color: #999;
 	text-decoration: line-through;
 }
+
+.flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
