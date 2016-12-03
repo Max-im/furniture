@@ -44,7 +44,10 @@ $(".selectMenu").on("click", function(e){
 
 function bigMenuRwsizing() {
   	var winLen = $('.container').innerWidth();
-  	$('.featuresMenuSubmenuWrap').width(winLen)
+  	if( winLen >= 767){
+  		$('.featuresMenuSubmenuWrap').width(winLen);
+  	}
+  	return;
 }
 bigMenuRwsizing()
 $( window ).resize(bigMenuRwsizing);
@@ -66,6 +69,10 @@ makeHover('.cartMainDiv', '.cartPopup');
 makeHover('.livingroomMenuItem', '.livingroomMenuSubmenuWrap');
 makeHover('.featuresMainMenuItem', '.featuresMenuSubmenuWrap');
 
+
+$(".sandwich, .menu_item").click(function() {
+  $(".sandwich").toggleClass("swich");
+});
 
 
 })(jQuery);

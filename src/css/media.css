@@ -7,15 +7,38 @@
   .container .shippingWrap {
     margin: 30px 0px 0 5px;
     width: 25%; }
-  .container .cartWrap {
-    padding: 19px 3%; }
-    .container .cartWrap .cartHeader {
-      font-size: 14px;
-      line-height: 25px; } }
+  .container .cartWrap .cartHeader {
+    font-size: 14px;
+    line-height: 25px; }
+  .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .home {
+    padding: 13px 14px; }
+  .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .features {
+    padding: 17px 14px; }
+  .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .livingRoom {
+    padding: 17px 14px; }
+  .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .badrooms {
+    padding: 17px 14px; }
+  .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .blog {
+    padding: 17px 14px; }
+  .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .contactUs {
+    padding: 17px 14px; }
+  .mainMenuLine .container .mainMenuNav .mainMenuList .badroomsMenuItem .subMenuBadroomsWrap .subMenuBadrooms {
+    width: 160px;
+    padding: 10px; }
+  .mainMenuLine .container .mainMenuNav .mainMenuList .badroomsMenuItem .subMenuBadroomsWrap .goods {
+    margin: 10px;
+    width: 230px;
+    height: 400px; }
+    .mainMenuLine .container .mainMenuNav .mainMenuList .badroomsMenuItem .subMenuBadroomsWrap .goods:last-child {
+      margin: 10px 10px 10px 0; }
+  .container .featuresMenuSubmenuWrap {
+    left: -50px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .hide992 {
+    display: none; }
+  .hideAll992 {
     display: none; }
   .container .rightPanel .chatWrap {
     padding: 0 15px 0 0; }
@@ -40,13 +63,26 @@
     .container .shippingWrap .shippingText .shippingDesc {
       font-size: 12px; }
   .container .cartWrap {
-    padding: 19px 30px; }
+    width: 150px; }
     .container .cartWrap .cartHeader {
       font-size: 12px;
-      line-height: 25px; } }
+      line-height: 25px; }
+  .container .livingroomMenuSubmenuWrap {
+    padding: 15px 10px 10px 10px; }
+    .container .livingroomMenuSubmenuWrap .livingroomSubmenu .livingroomSubmenuItem {
+      -webkit-flex-basis: 33%;
+          -ms-flex-preferred-size: 33%;
+              flex-basis: 33%; }
+    .container .livingroomMenuSubmenuWrap a {
+      padding: 5px 0; }
+    .container .livingroomMenuSubmenuWrap .banner {
+      width: 520px;
+      margin: 10px 0 0 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .hide768 {
+    display: none; }
   .hide992 {
     display: inline; }
   .container .rightPanel {
@@ -88,11 +124,32 @@
           -ms-flex-order: 3;
               order: 3; }
     #headLine .container .cartWrap {
-      width: 15%;
+      width: 25%;
       -webkit-box-ordinal-group: 5;
       -webkit-order: 4;
           -ms-flex-order: 4;
-              order: 4; } }
+              order: 4; }
+  .container .livingroomMenuSubmenuWrap {
+    padding: 10px;
+    width: 180px; }
+    .container .livingroomMenuSubmenuWrap .livingroomSubmenu {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; }
+      .container .livingroomMenuSubmenuWrap .livingroomSubmenu .livingroomSubmenuItem {
+        -webkit-flex-basis: 100%;
+            -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+        border-bottom: 1px solid #dadada;
+        padding: 10px 0; }
+  .container .menu768 {
+    display: inline-block; }
+  .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem {
+    display: none; } }
 
 @media only screen and (max-width: 530px) {
   #headLine .container .furnitureWrap {
@@ -117,7 +174,7 @@
         -ms-flex-order: 3;
             order: 3; }
   #headLine .container .cartWrap {
-    width: 30%;
+    width: 40%;
     -webkit-box-ordinal-group: 5;
     -webkit-order: 4;
         -ms-flex-order: 4;

@@ -420,7 +420,11 @@ body {
             -ms-flex-preferred-size: 100%;
                 flex-basis: 100%;
         border-bottom: 1px solid #dadada;
-        padding: 10px 0; } }
+        padding: 10px 0; }
+  .container .menu768 {
+    display: inline-block; }
+  .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem {
+    display: none; } }
 
 @media only screen and (max-width: 530px) {
   #headLine .container .furnitureWrap {
@@ -1160,7 +1164,7 @@ ___________________________________________________________*/
       .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem:nth-child(1) {
         margin: 0 0 40px 0; }
       .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem .headerTemp, .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem .mainMenuLine .subMenuBadroomsWrap .subMenuBadrooms .firstSubMenuItem, .mainMenuLine .subMenuBadroomsWrap .subMenuBadrooms .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem .firstSubMenuItem, .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem .mainMenuLine .subMenuBadroomsWrap .goods .goodsHeader, .mainMenuLine .subMenuBadroomsWrap .goods .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem .goodsHeader {
-        margin: 0 0 10px 0; }
+        margin: 0 5px 10px 5px; }
       .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem .featuresSMTextItem {
         display: inline-block;
         padding: 5px 0;
@@ -1197,3 +1201,87 @@ ___________________________________________________________*/
     height: 10px;
     background: #03a9f4;
     margin: 0 5px 0 0; }
+
+/*sendwich*/
+.menu768 {
+  display: none;
+  vertical-align: middle;
+  position: relative; }
+
+.sandwich {
+  width: 30px;
+  height: 30px;
+  padding: 15px 0 5px 20px; }
+  .sandwich:hover .sw-topper,
+  .sandwich:hover .sw-bottom,
+  .sandwich:hover .sw-footer {
+    background: #279cc7;
+    -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.35); }
+
+.sw-topper {
+  position: relative;
+  top: 0;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  border: none;
+  -webkit-border-radius: 4px 4px 4px 4px;
+          border-radius: 4px 4px 4px 4px;
+  -webkit-transition: top 0.2s, -webkit-transform 0.5s;
+  transition: top 0.2s, -webkit-transform 0.5s;
+  transition: transform 0.5s, top 0.2s;
+  transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
+  -webkit-transition-delay: 0.2s, 0s;
+          transition-delay: 0.2s, 0s; }
+
+.sw-bottom {
+  position: relative;
+  width: 30px;
+  height: 3px;
+  top: 6px;
+  background: #fff;
+  border: none;
+  -webkit-border-radius: 4px 4px 4px 4px;
+          border-radius: 4px 4px 4px 4px;
+  -webkit-transition: top 0.2s, -webkit-transform 0.5s;
+  transition: top 0.2s, -webkit-transform 0.5s;
+  transition: transform 0.5s, top 0.2s;
+  transition: transform 0.5s, top 0.2s, -webkit-transform 0.5s;
+  -webkit-transition-delay: 0.2s, 0s;
+          transition-delay: 0.2s, 0s; }
+
+.sw-footer {
+  position: relative;
+  width: 30px;
+  height: 3px;
+  top: 12px;
+  background: #fff;
+  border: none;
+  -webkit-border-radius: 4px 4px 4px 4px;
+          border-radius: 4px 4px 4px 4px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transition-delay: .1s;
+          transition-delay: .1s; }
+
+.sandwich.swich .sw-topper {
+  top: 12px;
+  -webkit-transform: rotate(140deg);
+      -ms-transform: rotate(140deg);
+          transform: rotate(140deg); }
+
+.sandwich.swich .sw-bottom {
+  top: 9px;
+  -webkit-transform: rotate(-140deg);
+      -ms-transform: rotate(-140deg);
+          transform: rotate(-140deg); }
+
+.sandwich.swich .sw-footer {
+  opacity: 0;
+  top: 0;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }

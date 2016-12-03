@@ -13,11 +13,13 @@ var gulp       = require('gulp'), // Подключаем Gulp
 	autoprefixer = require('gulp-autoprefixer');// Подключаем библиотеку для автоматического добавления префиксов
 
 gulp.task('sass', function(){ // Создаем таск Sass
-	return gulp.src('src/sass/**/*.scss') // Берем источник
-		.pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
-		.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
-		.pipe(gulp.dest('src/css')) // Выгружаем результата в папку src/css
-		.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
+	setTimeout(function(){
+		return gulp.src('src/sass/**/*.scss') // Берем источник
+			.pipe(sass()) // Преобразуем Sass в CSS посредством gulp-sass
+			.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
+			.pipe(gulp.dest('src/css')) // Выгружаем результата в папку src/css
+			.pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
+		}, 100);
 });
 
 gulp.task('sprite', function(){

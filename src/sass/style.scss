@@ -1,7 +1,7 @@
-@import "_fonts.scss";
-@import "_reset.scss";
-@import "_media.scss";
-@import "_var.scss";
+@import "fonts.scss";
+@import "reset.scss";
+@import "media.scss";
+@import "var.scss";
 
 /*======================
 |		STYLE MAP      |
@@ -733,7 +733,7 @@ ___________________________________________________________*/
 				margin: 0 0 40px 0;
 			}
 			.headerTemp{
-				margin: 0 0 10px 0;
+				margin: 0 5px 10px 5px;
 			}
 			.featuresSMTextItem{
 				display: inline-block;
@@ -782,4 +782,87 @@ ___________________________________________________________*/
 		margin: 0 5px 0 0;		
 	}
 
+}
+
+
+
+/*sendwich*/
+
+
+.menu768{
+	display: none;
+	vertical-align: middle;
+	position: relative;
+}
+
+.sandwich{
+  width: $w;
+  height: $w;
+  padding: 15px 0 5px 20px;
+  &:hover{
+	.sw-topper,
+	.sw-bottom,
+	.sw-footer{
+		background: $blueColor;
+		box-shadow: 0 0 6px rgba(0,0,0,.35);
+	}
+  } 
+} 
+
+
+
+
+.sw-topper{
+	position: relative;
+	top: 0;
+	width: $w;
+	height: $h;
+	background: #fff;
+	border: none; 
+	border-radius: 4px 4px 4px 4px;
+	transition: transform 0.5s, top 0.2s;
+	 transition-delay: 0.2s, 0s; 
+}
+
+
+
+.sw-bottom{
+	position: relative;
+	width: $w;
+	height: $h;
+	top: $h * 2;
+	background: #fff;
+	border: none;
+	border-radius: 4px 4px 4px 4px;
+	transition: transform 0.5s, top 0.2s;
+	transition-delay: 0.2s, 0s; 
+}
+
+.sw-footer{
+	position: relative;
+	width: $w;
+	height: $h;
+	top: $h * 4;
+	background: #fff;
+	border: none;
+	border-radius: 4px 4px 4px 4px;
+	transition: transform 0.5s;
+	transition-delay: .1s; 
+}
+
+.sandwich.swich{
+
+  .sw-topper{
+	top: 12px;
+	transform: rotate(140deg);
+  }
+  .sw-bottom{
+	top: 9px;
+	transform: rotate(-140deg);
+  }
+  .sw-footer{
+	opacity: 0;
+	top: 0;
+	transform: rotate(180deg);
+  }
 }

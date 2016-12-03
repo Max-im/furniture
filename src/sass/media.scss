@@ -250,9 +250,22 @@
 					padding: 10px 0;
 				}
 			}
-		}	
-	}
+		}
 
+
+
+
+
+		.menu768{
+			display: inline-block;
+		}
+	
+	}
+		.mainMenuLine .container .mainMenuNav .mainMenuList {
+			.mainMenuItem{
+				display: none;
+			}
+		}
 
 }
 
