@@ -261,11 +261,131 @@
 		}
 	
 	}
-		.mainMenuLine .container .mainMenuNav .mainMenuList {
-			.mainMenuItem{
-				display: none;
+	.mainMenuLine .container .mainMenuNav .mainMenuList {
+		.mainMenuItem{
+			display: none;
+			width:120px;
+			.home{
+				padding: 5px;
+				width: 120px;
+				display: block;
+				box-sizing: border-box;
+				font-size: 16px;
 			}
+			.features{
+				padding: 5px;
+				width: 120px;
+				display: block;
+				box-sizing: border-box;
+				font-size: 12px;
+			}
+			.livingRoom{
+				padding: 5px;
+				width: 120px;
+				display: block;
+				box-sizing: border-box;
+				font-size: 12px;
+			}
+			.badrooms{
+				padding: 5px;
+				width: 120px;
+				display: block;
+				box-sizing: border-box;
+				font-size: 12px;
+			}
+
+			.blog{
+				padding: 5px;
+				width: 120px;
+				display: block;
+				box-sizing: border-box;
+				font-size: 12px;
+			}
+			.contactUs{
+				padding: 5px;
+				width: 120px;
+				display: block;
+				box-sizing: border-box;
+				font-size: 12px;
+			}
+
+
+			.subMenuBadroomsWrap{
+				left: 100%;
+				top: 0px;
+				.subMenuBadrooms{
+					padding: 10px 10px 0 10px;
+					.firstSubMenuItem{
+						font-size: 12px;
+					}
+					.subMenuItem{
+						padding: 5px 0;
+						letter-spacing: -.5px;
+					}
+
+				}
+			}
+
+			.livingroomMenuSubmenuWrap{
+				left: 100%;
+				top: 0px;
+				padding:  0 10px;
+				width: 400px;
+				.livingroomSubmenu{
+					flex-wrap: nowrap;
+					.livingroomSubmenuItem{
+						border-bottom: none;
+						margin: 0 10px;
+						flex-basis: 33%;
+						.headerTemp{
+							font-size: 12px;
+						}
+					}
+				}
+				a{
+					padding: 5px 0;
+					letter-spacing: -.5px;
+				}
+				.banner{
+					display: none;
+				}
+			}	
+
+
+			.featuresMenuSubmenuWrap{
+				left: 100%;
+				top: 0px;
+				.flexWrap{
+					width: 400px;
+					padding: 10px;
+					flex-wrap: wrap;
+					.featuresMenuSubmenuItem{
+						margin: 0 0 10px 0;
+						display: block;
+						flex-basis: 33%;
+						&:nth-child(1){
+							margin: 0 0 10px 0;
+						}
+						.headerTemp{
+							margin: 0 5px 5px 5px;
+							font-size: 12px;
+						}
+						.featuresSMTextItem{
+							padding: 3px 0;
+							letter-spacing: -.5px;
+						}
+					}
+				}
+			}
+
 		}
+		.active{
+			padding: 0px;
+			width: 120px;
+			box-sizing: border-box;
+		}
+
+	}
 
 }
 
@@ -296,6 +416,31 @@
 			}
 
 		}
+	}
+	
+
+
+	.mainMenuLine .container .mainMenuNav .mainMenuList {
+		.mainMenuItem{
+			width:120px;
+			.livingroomMenuSubmenuWrap{
+				width: 280px;
+			}	
+
+			.featuresMenuSubmenuWrap{
+				.flexWrap{
+					width: 280px;
+					.featuresMenuSubmenuItem{
+						flex-basis: 33%;
+						.featuresSMTextItem{
+							font-size: 10px;
+						}
+					}
+				}
+			}
+
+		}
+
 	}
 
 
@@ -339,7 +484,11 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+	.mainMenuLine .container .mainMenuNav .mainMenuList {
+		.mainMenuItem{
+			display: inline-block !important;
+		}
+	}
 }
 
 /* Medium Devices, Desktops */

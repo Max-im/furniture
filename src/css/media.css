@@ -149,7 +149,110 @@
   .container .menu768 {
     display: inline-block; }
   .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem {
-    display: none; } }
+    display: none;
+    width: 120px; }
+    .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .home {
+      padding: 5px;
+      width: 120px;
+      display: block;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      font-size: 16px; }
+    .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .features {
+      padding: 5px;
+      width: 120px;
+      display: block;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      font-size: 12px; }
+    .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .livingRoom {
+      padding: 5px;
+      width: 120px;
+      display: block;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      font-size: 12px; }
+    .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .badrooms {
+      padding: 5px;
+      width: 120px;
+      display: block;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      font-size: 12px; }
+    .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .blog {
+      padding: 5px;
+      width: 120px;
+      display: block;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      font-size: 12px; }
+    .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .contactUs {
+      padding: 5px;
+      width: 120px;
+      display: block;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      font-size: 12px; }
+    .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .subMenuBadroomsWrap {
+      left: 100%;
+      top: 0px; }
+      .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .subMenuBadroomsWrap .subMenuBadrooms {
+        padding: 10px 10px 0 10px; }
+        .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .subMenuBadroomsWrap .subMenuBadrooms .firstSubMenuItem {
+          font-size: 12px; }
+        .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .subMenuBadroomsWrap .subMenuBadrooms .subMenuItem {
+          padding: 5px 0;
+          letter-spacing: -.5px; }
+    .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .livingroomMenuSubmenuWrap {
+      left: 100%;
+      top: 0px;
+      padding: 0 10px;
+      width: 400px; }
+      .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .livingroomMenuSubmenuWrap .livingroomSubmenu {
+        -webkit-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap; }
+        .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .livingroomMenuSubmenuWrap .livingroomSubmenu .livingroomSubmenuItem {
+          border-bottom: none;
+          margin: 0 10px;
+          -webkit-flex-basis: 33%;
+              -ms-flex-preferred-size: 33%;
+                  flex-basis: 33%; }
+          .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .livingroomMenuSubmenuWrap .livingroomSubmenu .livingroomSubmenuItem .headerTemp {
+            font-size: 12px; }
+      .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .livingroomMenuSubmenuWrap a {
+        padding: 5px 0;
+        letter-spacing: -.5px; }
+      .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .livingroomMenuSubmenuWrap .banner {
+        display: none; }
+    .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .featuresMenuSubmenuWrap {
+      left: 100%;
+      top: 0px; }
+      .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .featuresMenuSubmenuWrap .flexWrap {
+        width: 400px;
+        padding: 10px;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
+        .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem {
+          margin: 0 0 10px 0;
+          display: block;
+          -webkit-flex-basis: 33%;
+              -ms-flex-preferred-size: 33%;
+                  flex-basis: 33%; }
+          .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem:nth-child(1) {
+            margin: 0 0 10px 0; }
+          .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem .headerTemp {
+            margin: 0 5px 5px 5px;
+            font-size: 12px; }
+          .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem .featuresSMTextItem {
+            padding: 3px 0;
+            letter-spacing: -.5px; }
+  .mainMenuLine .container .mainMenuNav .mainMenuList .active {
+    padding: 0px;
+    width: 120px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; } }
 
 @media only screen and (max-width: 530px) {
   #headLine .container .furnitureWrap {
@@ -178,7 +281,19 @@
     -webkit-box-ordinal-group: 5;
     -webkit-order: 4;
         -ms-flex-order: 4;
-            order: 4; } }
+            order: 4; }
+  .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem {
+    width: 120px; }
+    .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .livingroomMenuSubmenuWrap {
+      width: 280px; }
+    .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .featuresMenuSubmenuWrap .flexWrap {
+      width: 280px; }
+      .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem {
+        -webkit-flex-basis: 33%;
+            -ms-flex-preferred-size: 33%;
+                flex-basis: 33%; }
+        .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .featuresMenuSubmenuWrap .flexWrap .featuresMenuSubmenuItem .featuresSMTextItem {
+          font-size: 10px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -192,5 +307,9 @@
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
 /* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem {
+    display: inline-block !important; } }
+
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */

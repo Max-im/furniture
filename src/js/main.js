@@ -44,10 +44,15 @@ $(".selectMenu").on("click", function(e){
 
 function bigMenuRwsizing() {
   	var winLen = $('.container').innerWidth();
-  	if( winLen >= 767){
+  	if( winLen > 768){
   		$('.featuresMenuSubmenuWrap').width(winLen);
-  	}
+  		return;
+  	}else if(winLen > 530){
+  		$('.featuresMenuSubmenuWrap').width(400);
   	return;
+  	}else{
+  		$('.featuresMenuSubmenuWrap').width(280);
+  	}
 }
 bigMenuRwsizing()
 $( window ).resize(bigMenuRwsizing);
@@ -57,9 +62,17 @@ function makeHover(parentEl, childElem){
 	$(parentEl).hover(
 		function(){
 			$(childElem).fadeIn();
+			$(parentEl)
+				.closest('div')
+				.children('a')
+				.css('background', '#279cc7')
 		},
 		function(){
 			$(childElem).fadeOut();
+			$(parentEl)
+				.closest('div')
+				.children('a')
+				.css('background', 'none')
 		}
 	);
 }
@@ -70,9 +83,26 @@ makeHover('.livingroomMenuItem', '.livingroomMenuSubmenuWrap');
 makeHover('.featuresMainMenuItem', '.featuresMenuSubmenuWrap');
 
 
+
 $(".sandwich, .menu_item").click(function() {
-  $(".sandwich").toggleClass("swich");
+
+  	$(".sandwich").toggleClass("swich");
+  	menuToggle();
 });
+
+function menuToggle(){
+
+  if($("#sandwich").hasClass('swich')){
+
+  	$('.mainMenuItem').slideDown();
+  	
+
+  } else{
+
+  	$('.mainMenuItem').slideUp();
+}
+
+  }
 
 
 })(jQuery);
