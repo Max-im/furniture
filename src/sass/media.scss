@@ -422,7 +422,7 @@
 
 	.mainMenuLine .container .mainMenuNav .mainMenuList {
 		.mainMenuItem{
-			width:120px;
+			/*width:120px;*/
 			.livingroomMenuSubmenuWrap{
 				width: 280px;
 			}	
@@ -458,6 +458,9 @@
 			.mainRightMenu{
 				>li{
 					margin: 0 2px;
+					a{
+						letter-spacing: -1px;
+					}
 				}
 			}
 		}

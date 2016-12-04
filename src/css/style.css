@@ -558,7 +558,7 @@ body {
         -ms-flex-order: 4;
             order: 4; }
   .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem {
-    width: 120px; }
+    /*width:120px;*/ }
     .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .livingroomMenuSubmenuWrap {
       width: 280px; }
     .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .featuresMenuSubmenuWrap .flexWrap {
@@ -575,7 +575,9 @@ body {
   .hide480 {
     display: none; }
   .container .leftPanel .mainRightMenu > li {
-    margin: 0 2px; } }
+    margin: 0 2px; }
+    .container .leftPanel .mainRightMenu > li a {
+      letter-spacing: -1px; } }
 
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/
@@ -894,7 +896,8 @@ ___________________________________________________________*/
     border: none;
     position: absolute;
     right: 0px;
-    top: 0px; }
+    top: 0px;
+    cursor: pointer; }
   .searchWrap::after {
     content: '';
     display: block;
@@ -1101,6 +1104,7 @@ ___________________________________________________________*/
 ___________________________________________________________*/
 .mainMenuLine {
   background-color: rgba(22, 22, 22, 0.9);
+  width: 120%;
   /*subMenu*/
   /*subMenuBadroomsWrap*/ }
   .mainMenuLine .container {
@@ -1121,10 +1125,11 @@ ___________________________________________________________*/
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .mainMenuLine .mainMenuNav {
-    -webkit-flex-basis: 80%;
-        -ms-flex-preferred-size: 80%;
-            flex-basis: 80%; }
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%; }
     .mainMenuLine .mainMenuNav .mainMenuList {
+      width: 100%;
       font-size: 0px; }
       .mainMenuLine .mainMenuNav .mainMenuList .mainMenuItem {
         display: inline-block;

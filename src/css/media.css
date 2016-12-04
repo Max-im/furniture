@@ -283,7 +283,7 @@
         -ms-flex-order: 4;
             order: 4; }
   .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem {
-    width: 120px; }
+    /*width:120px;*/ }
     .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .livingroomMenuSubmenuWrap {
       width: 280px; }
     .mainMenuLine .container .mainMenuNav .mainMenuList .mainMenuItem .featuresMenuSubmenuWrap .flexWrap {
@@ -300,7 +300,9 @@
   .hide480 {
     display: none; }
   .container .leftPanel .mainRightMenu > li {
-    margin: 0 2px; } }
+    margin: 0 2px; }
+    .container .leftPanel .mainRightMenu > li a {
+      letter-spacing: -1px; } }
 
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/

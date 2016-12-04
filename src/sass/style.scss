@@ -283,6 +283,7 @@ ___________________________________________________________*/
 		position: absolute;
 		right: 0px;
 		top: 0px;
+		cursor: pointer;
 	}
 
 	&::after{
@@ -534,6 +535,7 @@ ___________________________________________________________*/
 
 .mainMenuLine{
 	background-color: rgba(22,22,22,.9);
+	width: 120%;
 	.container{
 		display: flex;
 		flex-direction: row;
@@ -541,9 +543,10 @@ ___________________________________________________________*/
 		justify-content: space-between;	
 	}
 	.mainMenuNav{
-		flex-basis: 80%;
+		flex-basis: 100%;
 
 		.mainMenuList{
+			width: 100%;
 				font-size: 0px;
 			.mainMenuItem{
 				display: inline-block;

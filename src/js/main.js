@@ -59,8 +59,11 @@ $( window ).resize(bigMenuRwsizing);
 
 
 function makeHover(parentEl, childElem){
+	$(parentEl).on('click', function(e){
+		e.preventDefault();
+	})
 	$(parentEl).hover(
-		function(){
+		function(e){
 			$(childElem).fadeIn();
 			$(parentEl)
 				.closest('div')
