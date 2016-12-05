@@ -48,7 +48,8 @@ gulp.task('sass', ['css-libs'], function(){
 
 gulp.task('css-libs', function(){
 	return gulp.src([
-		'src/libs/fancyBox/source/jquery.fancybox.css' // FancyBox
+		'src/libs/fancyBox/source/jquery.fancybox.css', // FancyBox
+		'src/libs/anemate.css/animate.min.css' // Animate
 		
 
 		// ...
@@ -88,8 +89,7 @@ gulp.task('libs-js', function() {
 gulp.task('plugins-js', function() {
 	return gulp.src([
 		'src/libs/jcarousel/dist/jquery.jcarousel.min.js', // jCarousel
-		'src/libs/fancyBox/source/jquery.fancybox.js' // FancyBox
-
+		'src/libs/fancyBox/source/jquery.fancybox.js', // FancyBox
 
 		// ...
 		])

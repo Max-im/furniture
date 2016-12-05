@@ -13,24 +13,21 @@ $("#search").on("blur", function(){
 $('<i class="fa fa-user" aria-hidden="true"> </i>').prependTo($('.accountMenu')).css('marginRight', 5);
 $('<i class="fa fa-sort-desc" aria-hidden="true"></i>').appendTo($('.selectMenu'));
 
+
+
 $(".selectMenu").on("click", function(e){
 	e.preventDefault();
-	var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-	var item = e.target;
-	var itemObj = $(e.target.nextElementSibling);
-	function hideMenu(){itemObj.addClass("animated flipOutX").one(
-			animationEnd, function(){$(this).removeClass(
-			'animated flipOutX').addClass("hide");
-			itemObj.css("display", "none");});
-		};
+	let animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+	let item = e.target;
+	let itemObj = $(e.target.nextElementSibling);
+	function hideMenu(){
+		itemObj.slideUp().addClass("hide");
+	};
 	if(itemObj.hasClass("hide")){
-		itemObj.css("display", "block");
-		itemObj.addClass("animated flipInX").one(
-			animationEnd, function(){$(this).removeClass(
-			'animated flipInX hide')});
+		itemObj.slideDown().removeClass('hide');
 		itemObj.on('click', function(e){
 			e.preventDefault();
-			var textNode = e.target.innerHTML;
+			let textNode = e.target.innerHTML;
 			item.innerHTML = textNode;
 			hideMenu();
 		});
@@ -43,7 +40,7 @@ $(".selectMenu").on("click", function(e){
 
 
 function bigMenuRwsizing() {
-  	var winLen = $('.container').innerWidth();
+  	let winLen = $('.container').innerWidth();
   	if( winLen > 768){
   		$('.featuresMenuSubmenuWrap').width(winLen);
   		return;
