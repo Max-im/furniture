@@ -1,7 +1,7 @@
-@import "fonts.scss";
-@import "reset.scss";
-@import "media.scss";
-@import "var.scss";
+@import "./import/fonts";
+@import "./import/reset";
+@import "./import/media";
+@import "./import/var";
 
 /*======================
 |		STYLE MAP      |
@@ -612,7 +612,6 @@ ___________________________________________________________*/
 		background: #fff;
 		max-width: 820px;
 		box-sizing: border-box;
-		transition: all 0.3s, top 0.3s;	
 		.flexWrap{
 			@extend .flex;
 			box-sizing: border-box;
@@ -694,7 +693,6 @@ ___________________________________________________________*/
 	background: #fff;	
 	padding: 35px 30px 30px 30px;
 	box-sizing: border-box;
-	transition: all 0.3s, top 0.3s;	
 	.livingroomSubmenu{
 		@extend .flex;
 		justify-content: flex-start;
@@ -727,7 +725,6 @@ ___________________________________________________________*/
 	top: 37px;
 	box-shadow: 0 0 6px rgba(0,0,0,.35); 
 	background: #fff;
-	transition: all 0.3s, top 0.3s;	
 	.flexWrap{
 		padding: 30px 15px 35px 15px;
 		box-sizing: border-box;
