@@ -172,8 +172,60 @@
 
 	}
 
+/*1.4. slider
+___________________________________________________________*/
 
+	.slider{
 
+		.slideInfo{
+			width: 380px;
+			height: 180px;
+			.compName{
+				font-size: 35px;
+				padding: 0 15px 0 0;
+				line-height: 30px;
+			}
+
+			.sliderHead{
+				font-size: 60px;	
+				margin: 13px 0 23px 0;
+			}
+			.compDesc{
+				width: 140px;
+				font-size: 12px;
+				line-height: 18px;
+				letter-spacing: -.5px;
+				padding: 0px 0 0 12px;
+			}
+
+			.shopBtn{
+				font-size: 12px;
+				padding: 10px 15px;
+			}
+		}
+
+		/*pagination*/
+		.owl-controls{
+			bottom: 20px;
+			.owl-buttons{
+				.owl-prev{
+					i{
+						font-size: 70px;
+						left: 50px;
+						top: -250%;
+					}
+				}
+				.owl-next{
+					i{
+						font-size: 70px;
+						right: 50px;
+						top: -250%;
+					}
+				}
+			}
+		}
+
+	}
 
 }
 
@@ -387,6 +439,70 @@
 
 	}
 
+
+/*1.4. slider
+___________________________________________________________*/
+
+	.slider{
+		padding: 30px 0;
+		margin: -30px 0 0 0;
+
+		.slideInfo{
+			width: 280px;
+			height: 120px;
+			.compName{
+				font-size: 30px;
+				padding: 0 10px 0 0;
+				line-height: 20px;
+			}
+
+			.sliderHead{
+				font-size: 45px;	
+				margin: 10px 0 15px 0;
+			}
+			.compDesc{
+				width: 80px;
+				font-size: 10px;
+				line-height: 15px;
+				letter-spacing: -.5px;
+				padding: 0px 0 0 10px;
+			}
+
+			.shopBtn{
+				font-size: 12px;
+				padding: 8px 12px;
+			}
+		}
+
+		/*pagination*/
+		.owl-controls{
+			bottom: 40px;
+			.owl-buttons{
+				.owl-prev{
+					i{
+						font-size: 70px;
+						left: 20px;
+						top: -350%;
+					}
+				}
+				.owl-next{
+					i{
+						font-size: 70px;
+						right: 20px;
+						top: -350%;
+					}
+				}
+			}
+		}
+
+	}
+
+
+
+
+
+
+
 }
 
 @media only screen and (max-width : 530px) {
@@ -466,6 +582,81 @@
 	}
 	
 
+/*1.4. slider
+___________________________________________________________*/
+
+	.slider{
+		padding: 30px 0;
+		margin: -30px 0 0 0;
+
+		.slideInfo{
+			width: 220px;
+			height: 120px;
+			.compName{
+				font-size: 30px;
+				padding: 0;
+				line-height: 30px;
+				text-align: center;
+			}
+			.compNameLeftWrap{
+				text-align: center;
+			}
+			.sliderHead{
+				font-size: 35px;	
+				margin: 10px 0 15px 0;
+			}
+			.compDesc{
+				width: 220px;
+				font-size: 10px;
+				line-height: 15px;
+				letter-spacing: -.5px;
+				padding: 0px;
+				border-left: 0px solid #fff;
+			}
+
+			.shopBtn{
+				font-size: 12px;
+				padding: 8px 12px;
+			}
+		}
+
+		/*pagination*/
+		.owl-controls{
+			bottom: 40px;
+			.owl-pagination{
+				.owl-page{
+					span{
+						width: 10px;							
+						height: 10px;
+					}
+				}
+				.active{
+					span{
+						width: 10px;							
+						height: 10px;
+					}	
+				}
+			}
+			.owl-buttons{
+				.owl-prev{
+					i{
+						font-size: 50px;
+						left: 10px;
+						top: -350%;
+					}
+				}
+				.owl-next{
+					i{
+						font-size: 50px;
+						right: 10px;
+						top: -350%;
+					}
+				}
+			}
+		}
+
+	}
+
 
 
 
@@ -520,6 +711,72 @@
 		}
 
 	}	
+
+
+
+/*1.4. slider
+___________________________________________________________*/
+
+	.slider{
+		padding: 30px 0;
+		margin: -30px 0 0 0;
+
+		.slideInfo{
+			width: 220px;
+			height: 120px;
+			.compName{
+				font-size: 30px;
+				padding: 0;
+				line-height: 30px;
+				text-align: center;
+			}
+			.compNameLeftWrap{
+				text-align: center;
+			}
+			.sliderHead{
+				font-size: 35px;	
+				margin: 10px 0 15px 0;
+			}
+			.compDesc{
+				width: 220px;
+				font-size: 10px;
+				line-height: 15px;
+				letter-spacing: -.5px;
+				padding: 0px;
+				border-left: 0px solid #fff;
+			}
+
+			.shopBtn{
+				font-size: 12px;
+				padding: 8px 12px;
+			}
+		}
+
+		/*pagination*/
+		.owl-controls{
+			bottom: 40px;
+			.owl-buttons{
+				.owl-prev{
+					i{
+						font-size: 50px;
+						left: 10px;
+						top: -250%;
+					}
+				}
+				.owl-next{
+					i{
+						font-size: 50px;
+						right: 10px;
+						top: -250%;
+					}
+				}
+			}
+		}
+
+	}
+
+
+
 
 }
 

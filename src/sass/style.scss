@@ -364,7 +364,7 @@ ___________________________________________________________*/
 		height: 50px;
 		position: absolute;
 		top: 100%;
-		z-index: 100;
+		z-index: 51;
 		.socMenuList{
 			text-align: center;
 			z-index: 100;
@@ -894,14 +894,10 @@ ___________________________________________________________*/
 	width: 100%;
 	position: relative;
 }
-.owl-wrapper-outer{
-	z-index: -1;
-
-}
 
 .slideImg{
 	width: 100%;
-	height: 150%;
+	min-height: 400px;
 }
 
 .slideInfo{
@@ -925,13 +921,12 @@ ___________________________________________________________*/
 		text-transform: uppercase;
 		display: inline-block;
 		vertical-align: top;
-		border-right: 3px solid #fff;
 		padding: 0 15px 0 0;
 		line-height: 36px;
-		width: 270px;
-		text-align: center;
 	}
 
+
+	
 	.sliderHead{
 		font-family: "RalewayExtraBold";
 		color: #fff;
@@ -946,6 +941,7 @@ ___________________________________________________________*/
 		font-family: "RalewaySemiBold";
 		color: #fff;
 		font-size: 14px;
+		border-left: 3px solid #fff;
 		line-height: 18px;
 		letter-spacing: -.5px;
 		padding: 0px 0 0 12px;
@@ -976,7 +972,6 @@ ___________________________________________________________*/
 	bottom: 50px;
 	left: 0;
 	right: 0;
-	z-index: 10;
 	.owl-pagination{
 		.owl-page{
 			span{
@@ -991,4 +986,38 @@ ___________________________________________________________*/
 			}	
 		}
 	}
+
+
+	.owl-buttons{
+		.owl-prev{
+			background: rgba(0,0,0,.0) !important;
+			opacity: 1 !important;
+			i{
+				position: absolute;
+				font-size: 100px;
+				left: 50px;
+				top: -450%;
+				&:hover{
+					color: $blueColor;
+					text-shadow: 1px 0 1px rgba(255,255,255,.5);
+				}
+			}
+		}
+		.owl-next{
+			background: rgba(0,0,0,.0) !important;
+			opacity: 1 !important;
+			i{
+				position: absolute;
+				font-size: 100px;
+				right: 50px;
+				top: -450%;
+				&:hover{
+					color: $blueColor;
+					text-shadow: -1px 0 1px rgba(255,255,255,.5);
+				}
+			}
+		}
+	}
+
+
 }

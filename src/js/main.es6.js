@@ -111,14 +111,32 @@ makeHover('.featuresMainMenuItem', '.featuresMenuSubmenuWrap');
 
 $("#carousel").owlCarousel({
 	items : 1,
-	responsive: false,
-	autoPlay : 4000,
+	autoPlay : 5000,
 	pagination: true,
 	navigation : true,
+	mouseDrag: false,
+	slideSpeed : 300,
+    paginationSpeed : 400,
+    singleItem:true
 
 });
 
 
+$('.owl-prev').empty().append('<i class="fa fa-angle-left" aria-hidden="true"></i>');
+$('.owl-next').empty().append('<i class="fa fa-angle-right" aria-hidden="true"></i>');
+
+
+$( window ).resize(showLog);
+
+console.log($(window).width());
+console.log($('.slider').width());
+
+function showLog(){
+	console.log('window' + $(window).width());
+	console.log('slider' + $('.slider').width());
+	console.log('slider inn ' + $('.slider').innerWidth());
+	// $('.slideImg').innerWidth($('.slider').width());
+}
 
 })(jQuery);
 
