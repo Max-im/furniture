@@ -13,7 +13,12 @@
 	1.2. headLine
 	1.3. mainMenuLine
 	1.4. slider
-2. 
+2. main
+	2.1. dealsSaleProducts
+		2.1.1. deals
+		2.1.2. salesAndProducts
+			2.1.2.1. sale
+			2.1.2.2. products
 3. 
 4. 
 5. 
@@ -972,7 +977,7 @@ ___________________________________________________________*/
 /*pagination*/
 .owl-controls{
 	position: absolute;
-	bottom: 50px;
+	bottom: 60px;
 	left: 0;
 	right: 0;
 	.owl-pagination{
@@ -1023,4 +1028,179 @@ ___________________________________________________________*/
 	}
 
 
+}
+
+
+
+
+/*===========================================================
+
+2. main
+============================================================*/
+
+
+.main{
+	background: #eee;
+}
+
+.container{
+	position: relative;
+}
+/*============================================================*/
+/*2.1. dealsSaleProducts*/
+/*============================================================*/
+
+.dealsSaleProducts{
+	@extend .flex;
+	width: 100%;
+	background: #fff;
+	margin: -60px 0 0 0;
+	z-index: 50;
+}
+
+
+/*2.1.1. deals*/
+/*___________________________________________________________*/
+
+
+.deals{
+	background: $blueColor;
+	padding: 30px 0;
+	flex-basis: 325px;
+	box-sizing: border-box;
+}
+.dealsHeader{
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #fff;
+	margin: 0 0 30px 0;
+	padding: 0 30px;
+	.strong{
+		font-size: 20px;
+	}
+}
+.ourDeals{
+	padding: 35px 30px;
+	border-top: 1px solid #1581a9;
+	font-size: 0;
+	line-height: 0;
+	.dealsText{
+		color: #fff;
+		font-size: 12px;
+		line-height: 18px;
+	}
+	.imgSection{
+		display: inline-block;
+		img{
+			width: 100%;
+		}
+	}
+
+}
+
+
+
+/*2.1.2. salesAndProducts*/
+
+.salesAndProducts{
+	flex-basis: 70%;
+	height: 500px;
+	@extend .flex;
+
+}
+
+
+
+
+/*2.1.2.1. sale*/
+/*___________________________________________________________*/
+
+.sale{
+	background: #fff;
+	.saleDate{
+		padding: 30px 0 0 0;
+		display: inline-block;
+		vertical-align: top;
+		p{
+			color: #ff5722;
+			font-family: "OpenSansBold";
+			font-size: 16px;
+			display: block;
+			width: 53px;
+			height: 45px;
+			text-align: center;
+			border: 1px solid #ddd;
+			padding: 11px 0 0 0;
+			box-sizing: border-box;
+			border-bottom: none;
+			&:last-child{
+				border-bottom: 1px solid #ddd;
+			}
+			span{
+				font-size: 9px;
+				color: #777;
+				text-transform: uppercase;
+				display: block;
+			}
+		}
+	}
+	.goodImg{
+		display: inline-block;
+		vertical-align: top;
+	}
+	.goodBottom{
+		@extend .flex;
+		.goodDisc{
+			.goodName{
+				display: block;
+				color: #484848;
+				text-transform: uppercase;
+				font-family: "RalewayBlack";
+				margin: 0 0 10px 0;
+				cursor: pointer;
+				&:hover{
+					color: $blueColor;
+				}
+			}
+			.oldPrice{
+				font-family: "OpenSansRegular";
+				margin: 10px 15px 0 0;
+			}
+			.stars{
+				margin: 10px 0 0 0;
+			}
+		}
+		.pagination{
+			a{
+				display: inline-block;
+				text-align: center;
+				line-height: 35px;
+				width: 35px;
+				height: 35px;
+				background: #fff;
+				color: #9d9d9d;
+				font-size: 22px;
+				border: 1px solid #ddd;
+				&:hover{
+					background: $blueColor;
+					border: 1px solid $blueColor;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+}
+
+
+
+
+
+/*2.1.2.2. products*/
+/*___________________________________________________________*/
+
+
+.products{
+	flex-basis: 285px;
+	border-left: 1px solid #ddd;
 }
