@@ -93,16 +93,22 @@ $(".sandwich, .menu_item").click(function() {
 function menuToggle(){
 
   if($("#sandwich").hasClass('swich')){
-
   	$('.mainMenuItem').slideDown();
-  	
-
   } else{
-
   	$('.mainMenuItem').slideUp();
+  }
+
 }
 
-  }
+
+$("#carousel").owlCarousel({
+	items : 1,
+	responsive: false,
+	autoPlay : 4000,
+	pagination: true,
+	navigation : true
+});
+
 
 
 })(jQuery);

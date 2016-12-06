@@ -29,7 +29,7 @@
 
 .container{
 	max-width: 1170px;
-	min-width: 420px;
+	min-width: 320px;
 	margin: 0 auto;
 }
 
@@ -538,7 +538,8 @@ ___________________________________________________________*/
 
 .mainMenuLine{
 	background-color: rgba(22,22,22,.9);
-	width: 120%;
+	width: 100%;
+	z-index: 5;
 	.container{
 		display: flex;
 		flex-direction: row;
@@ -550,7 +551,10 @@ ___________________________________________________________*/
 
 		.mainMenuList{
 			width: 100%;
-				font-size: 0px;
+			font-size: 0px;
+			.active{
+				background: $blueColor !important;
+			}
 			.mainMenuItem{
 				display: inline-block;
 				vertical-align: middle;
@@ -881,3 +885,107 @@ ___________________________________________________________*/
 /*1.4. slider
 ___________________________________________________________*/
 
+
+.slider{
+	width: 100%;
+	margin: -50px 0 0 0;
+	position: relative;
+}
+.owl-wrapper-outer{
+	z-index: -1;
+
+}
+
+.slideImg{
+	width: 100%;
+	height: 150%;
+}
+
+.slideInfo{
+	width: 505px;
+	height: 180px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	font-size: 0;
+	.compNameLeftWrap{
+		text-align: left;
+	}
+	.compName{
+		font-family: "RalewaySemiBold";
+		color: #e4d16b;
+		font-size: 48px;
+		text-transform: uppercase;
+		display: inline-block;
+		vertical-align: top;
+		border-right: 3px solid #fff;
+		padding: 0 15px 0 0;
+		line-height: 36px;
+		width: 270px;
+		text-align: center;
+	}
+
+	.sliderHead{
+		font-family: "RalewayExtraBold";
+		color: #fff;
+		font-size: 80px;	
+		text-transform: uppercase;
+		margin: 13px 0 23px 0;
+	}
+	.compDesc{
+		display: inline-block;
+		width: 140px;
+		vertical-align: top;
+		font-family: "RalewaySemiBold";
+		color: #fff;
+		font-size: 14px;
+		line-height: 18px;
+		letter-spacing: -.5px;
+		padding: 0px 0 0 12px;
+	}
+
+	.firstSlideCompName{
+		border-right: 0px;
+	}
+	
+	.shopBtn{
+		font-size: 14px;
+		color: #fff;
+		font-family: "OpenSansBold";
+		display: inline-block;
+		margin: 0 auto;
+		text-transform: uppercase;
+		border: 1px solid #fff;
+		padding: 15px 23px;
+		text-align: center;
+	}
+}
+
+
+
+/*pagination*/
+.owl-controls{
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+	z-index: 10;
+	.owl-pagination{
+		.owl-page{
+			span{
+				background: #fff !important;
+				opacity: 1 !important;
+			}
+		}
+		.active{
+			background: rgba(0,0,0,.0) !important;
+			span{
+				background: #beae59 !important;
+			}	
+		}
+	}
+}

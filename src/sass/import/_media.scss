@@ -390,6 +390,43 @@
 }
 
 @media only screen and (max-width : 530px) {
+	/*.logInPanel{
+		.container{
+			.leftPanel{
+				.mainRightMenu{
+					.selectMenu{
+						margin: 0 2px;
+						.selectItom{
+							font-size: 10px !important;
+							letter-spacing: -1px;
+						}
+					}
+				}
+			}
+		}
+	}*/
+
+
+	.logInPanel {
+		
+		.leftPanel .mainRightMenu{
+		>li{
+			margin: 0 2px;
+			
+			}
+		}
+		.big,
+		.strong{
+			font-size: 10px;
+			letter-spacing: -1px;	
+		}
+		a{
+			font-size: 10px;
+			letter-spacing: -1px;
+		}
+	}
+	
+	
 
 	#headLine{
 		.container{
@@ -444,6 +481,7 @@
 	}
 
 
+
 }
 
 
@@ -453,18 +491,7 @@
 		display: none;
 	}
 
-	.container{
-		.leftPanel{
-			.mainRightMenu{
-				>li{
-					margin: 0 2px;
-					a{
-						letter-spacing: -1px;
-					}
-				}
-			}
-		}
-	}
+
 }
 
 /* Custom, iPhone Retina */
