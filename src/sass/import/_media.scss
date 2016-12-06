@@ -313,6 +313,8 @@ ___________________________________________________________*/
 		}
 	
 	}
+
+
 	.mainMenuLine .container .mainMenuNav .mainMenuList {
 		.mainMenuItem{
 			display: none;
@@ -442,11 +444,7 @@ ___________________________________________________________*/
 
 /*1.4. slider
 ___________________________________________________________*/
-
 	.slider{
-		padding: 30px 0;
-		margin: -30px 0 0 0;
-
 		.slideInfo{
 			width: 280px;
 			height: 120px;
@@ -526,8 +524,69 @@ ___________________________________________________________*/
 		}
 	}
 	
-	
+.container{
+	.cartWrap{
+		/*popup window*/
+		.cartPopup{
+			width: 300px;
+			padding: 10px;
+			.addedItems{
+				font-size: 12px;
+			}
+			.cartItems{
+					margin: 8px 0;
+				.cartItem1{
+					padding: 12px 0;
+					.itemImg{
+						width: 70px;
+						height: 70px;
+					}
+					.itemDisc{
+						flex-basis: 55%;
+						.itemHeader{
+							font-size: 14px;
+						}
+						.stars{
+							margin: 0 0 5px 0;
+							.rewies{
+								margin: 0 0 0 10px;
+							}
+						}
+						.priceAndNum{
+							.qty{
+								margin: 0 6px 0 20px;
+							}
+							.itemNum{
+								width: 40px;
+								height: 30px;
+								line-height: 30px;
+							}
+						}
+					}
+				}/*cartItem1*/
+			}/*cartItems*/
+			.total{
+				padding: 0 0 15px 0;
+				margin: 0 0 15px 0;
+				.cartTotalText{
+					margin: 0 10px 0 0;
+				}
+			}
+			.cartBtns{
+				.cartBtn{
+					width: 130px;
+					height: 35px;
+					line-height: 35px;
+				}
+				.viewBtn1{
+					margin: 0 15px 0 0;
+				}
+			}
 
+		}
+
+	}		
+}
 	#headLine{
 		.container{
 			.furnitureWrap{
@@ -543,7 +602,7 @@ ___________________________________________________________*/
 			}
 
 			.shippingWrap{
-				width: 50%;
+				width: 55%;
 				order: 3;
 			}
 
@@ -554,7 +613,7 @@ ___________________________________________________________*/
 
 		}
 	}
-	
+
 
 
 	.mainMenuLine .container .mainMenuNav .mainMenuList {
@@ -586,9 +645,6 @@ ___________________________________________________________*/
 ___________________________________________________________*/
 
 	.slider{
-		padding: 30px 0;
-		margin: -30px 0 0 0;
-
 		.slideInfo{
 			width: 220px;
 			height: 120px;
@@ -718,9 +774,6 @@ ___________________________________________________________*/
 ___________________________________________________________*/
 
 	.slider{
-		padding: 30px 0;
-		margin: -30px 0 0 0;
-
 		.slideInfo{
 			width: 220px;
 			height: 120px;
