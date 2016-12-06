@@ -1,15 +1,9 @@
 (function($) {
 
-// search
-$("#search").on("focus", function(){
-	$(".fa-search").css("color", "#279cc7");
-});
-
-$("#search").on("blur", function(){
-	$(".fa-search").css("color", "#828282");
-});
 
 
+
+// top selectMenu
 $('<i class="fa fa-user" aria-hidden="true"> </i>').prependTo($('.accountMenu')).css('marginRight', 5);
 $('<i class="fa fa-sort-desc" aria-hidden="true"></i>').appendTo($('.selectMenu'));
 
@@ -17,7 +11,6 @@ $('<i class="fa fa-sort-desc" aria-hidden="true"></i>').appendTo($('.selectMenu'
 
 $(".selectMenu").on("click", function(e){
 	e.preventDefault();
-	let animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
 	let item = e.target;
 	let itemObj = $(e.target.nextElementSibling);
 	function hideMenu(){
@@ -39,6 +32,18 @@ $(".selectMenu").on("click", function(e){
 })
 
 
+
+// search
+$("#search").on("focus", function(){
+	$(".fa-search").css("color", "#279cc7");
+});
+
+$("#search").on("blur", function(){
+	$(".fa-search").css("color", "#828282");
+});
+
+
+// mainMenu
 function bigMenuRwsizing() {
   	let winLen = $('.container').innerWidth();
   	if( winLen > 768){
@@ -47,13 +52,33 @@ function bigMenuRwsizing() {
   	}else if(winLen > 530){
   		$('.featuresMenuSubmenuWrap').width(400);
   	return;
-  	}else{
+  	}else if(winLen > 480){
   		$('.featuresMenuSubmenuWrap').width(280);
+  	}
+  	else{
+  		$('.featuresMenuSubmenuWrap').width(200);
   	}
 }
 bigMenuRwsizing()
 $( window ).resize(bigMenuRwsizing);
 
+
+// sendwich
+$(".sandwich, .menu_item").click(function() {
+
+  	$(".sandwich").toggleClass("swich");
+  	menuToggle();
+});
+
+function menuToggle(){
+
+  if($("#sandwich").hasClass('swich')){
+  	$('.mainMenuItem').slideDown();
+  } else{
+  	$('.mainMenuItem').slideUp();
+  }
+
+}
 
 function makeHover(parentEl, childElem){
 	$(parentEl).on('click', function(e){
@@ -84,29 +109,13 @@ makeHover('.featuresMainMenuItem', '.featuresMenuSubmenuWrap');
 
 
 
-$(".sandwich, .menu_item").click(function() {
-
-  	$(".sandwich").toggleClass("swich");
-  	menuToggle();
-});
-
-function menuToggle(){
-
-  if($("#sandwich").hasClass('swich')){
-  	$('.mainMenuItem').slideDown();
-  } else{
-  	$('.mainMenuItem').slideUp();
-  }
-
-}
-
-
 $("#carousel").owlCarousel({
 	items : 1,
 	responsive: false,
 	autoPlay : 4000,
 	pagination: true,
-	navigation : true
+	navigation : true,
+
 });
 
 

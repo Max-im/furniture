@@ -390,22 +390,6 @@
 }
 
 @media only screen and (max-width : 530px) {
-	/*.logInPanel{
-		.container{
-			.leftPanel{
-				.mainRightMenu{
-					.selectMenu{
-						margin: 0 2px;
-						.selectItom{
-							font-size: 10px !important;
-							letter-spacing: -1px;
-						}
-					}
-				}
-			}
-		}
-	}*/
-
 
 	.logInPanel {
 		
@@ -459,10 +443,11 @@
 
 	.mainMenuLine .container .mainMenuNav .mainMenuList {
 		.mainMenuItem{
-			/*width:120px;*/
 			.livingroomMenuSubmenuWrap{
 				width: 280px;
 			}	
+
+
 
 			.featuresMenuSubmenuWrap{
 				.flexWrap{
@@ -479,6 +464,9 @@
 		}
 
 	}
+	
+
+
 
 
 
@@ -490,7 +478,48 @@
 	.hide480{
 		display: none;
 	}
+	
 
+	.mainMenuLine .container .mainMenuNav .mainMenuList {
+		.mainMenuItem{
+			.livingroomMenuSubmenuWrap{
+				padding:  5px;
+				width: 200px;
+				.livingroomSubmenu{
+					flex-wrap: wrap;
+					.livingroomSubmenuItem{
+						flex-basis: 100%;
+						padding: 3px 0;	
+					}
+				}
+				a{
+					font-size: 10px;
+					letter-spacing: -.5px;
+					padding: 0px 0;
+				}
+				.headerTemp{
+					font-size: 10px !important;
+				}
+			}	
+
+	
+
+
+			.featuresMenuSubmenuWrap{
+				.flexWrap{
+					width: 200px;
+					.featuresMenuSubmenuItem{
+						flex-basis: 50%;
+						.featuresSMTextItem{
+							padding: 0px;
+						}
+					}
+				}
+			}
+
+		}
+
+	}	
 
 }
 

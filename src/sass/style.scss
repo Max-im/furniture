@@ -364,8 +364,10 @@ ___________________________________________________________*/
 		height: 50px;
 		position: absolute;
 		top: 100%;
+		z-index: 100;
 		.socMenuList{
 			text-align: center;
+			z-index: 100;
 			.socMenuItem{
 				display: inline-block;
 				vertical-align: middle;
@@ -539,7 +541,8 @@ ___________________________________________________________*/
 .mainMenuLine{
 	background-color: rgba(22,22,22,.9);
 	width: 100%;
-	z-index: 5;
+	z-index: 50;
+	position: absolute;
 	.container{
 		display: flex;
 		flex-direction: row;
@@ -701,6 +704,7 @@ ___________________________________________________________*/
 	padding: 35px 30px 30px 30px;
 	box-sizing: border-box;
 	.livingroomSubmenu{
+		width: 100%;
 		@extend .flex;
 		justify-content: flex-start;
 		.livingroomSubmenuItem{
@@ -888,7 +892,6 @@ ___________________________________________________________*/
 
 .slider{
 	width: 100%;
-	margin: -50px 0 0 0;
 	position: relative;
 }
 .owl-wrapper-outer{
