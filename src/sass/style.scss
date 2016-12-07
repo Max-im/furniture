@@ -1091,11 +1091,14 @@ ___________________________________________________________*/
 		margin: 0 0 26px 0;
 	}
 	.imgSection{
+		width: 130px;
+		height: 130px;
 		display: inline-block;
 		position: relative;
 		z-index: 0;
 		img{
 			width: 100%;
+			height: 100%;
 		}
 		&:hover{
 			z-index: 100;
@@ -1110,7 +1113,6 @@ ___________________________________________________________*/
 
 .salesAndProducts{
 	flex-basis: 70%;
-	height: 500px;
 	@extend .flex;
 
 }
@@ -1124,7 +1126,6 @@ ___________________________________________________________*/
 .sale{
 	background: #fff;
 	flex-basis: 61%;
-	align-self: flex-start;
 	.saleDate{
 		padding: 28px 0 0 0;
 		display: inline-block;
@@ -1160,7 +1161,11 @@ ___________________________________________________________*/
 		position: relative;
 		left: -13px;
 		z-index: 5;
+		img{
+			width: 100%;
+		}
 		.saleIcon{
+			position: absolute;
 			right: -60px;
 			top: 20px;
 		}
@@ -1222,6 +1227,7 @@ ___________________________________________________________*/
 .products{
 	flex-basis: 285px;
 	border-left: 1px solid #ddd;
+	z-index: 10;
 }
 .productsBlockHeader{
 	font-size: 20px;

@@ -82,7 +82,12 @@ function menuToggle(){
 
 function makeHover(parentEl, childElem){
 	$(parentEl).on('click', function(e){
-		e.preventDefault();
+		let eventTar =  e.target;
+		if($(eventTar).hasClass('features') ||
+			$(eventTar).hasClass('livingRoom') ||
+			$(eventTar).hasClass('badrooms')){
+			e.preventDefault();
+		}
 	})
 	$(parentEl).hover(
 		function(e){
