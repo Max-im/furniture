@@ -15,6 +15,9 @@ $h: 3px;
 .strong{
   font-family: "RalewayExtraBold";
 }
+.black{
+	font-family: "RalewayBlack";
+}
 
 .big{
   text-transform: uppercase;
@@ -55,6 +58,38 @@ $h: 3px;
 		background: $blueColor;
 	}
 }
+
+.saleIcon{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	&::after{
+		content: "SALE";
+		display: block;
+		width: 50px;
+		height: 32px;
+		background: $saleColor;
+		color: #fff;
+		font-family: "RalewayBlack";
+		font-size: 12px;
+		border-radius: 5px;
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		letter-spacing: .1px;
+		text-align: center;
+		line-height: 32px;
+	}
+	&::before{
+    	content: ''; 
+	    position: absolute;
+	    right: 41px; 
+	    top: 26px;
+	    border-bottom: 15px solid transparent;
+	    border-left: 10px solid $saleColor;
+    }
+}
+
 
 .fa-star{
 	color: $goldColor;

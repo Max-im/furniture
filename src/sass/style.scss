@@ -1065,37 +1065,43 @@ ___________________________________________________________*/
 
 .deals{
 	background: $blueColor;
-	padding: 30px 0;
-	flex-basis: 325px;
+	padding: 28px 0;
+	flex-basis: 320px;
 	box-sizing: border-box;
 }
 .dealsHeader{
 	text-transform: uppercase;
 	font-size: 20px;
 	color: #fff;
-	margin: 0 0 30px 0;
+	margin: 0 0 27px 0;
 	padding: 0 30px;
 	.strong{
 		font-size: 20px;
 	}
 }
 .ourDeals{
-	padding: 35px 30px;
+	padding: 30px 27px 0px 27px;
 	border-top: 1px solid #1581a9;
 	font-size: 0;
 	line-height: 0;
 	.dealsText{
 		color: #fff;
 		font-size: 12px;
-		line-height: 18px;
+		line-height: 20px;
+		margin: 0 0 26px 0;
 	}
 	.imgSection{
 		display: inline-block;
+		position: relative;
+		z-index: 0;
 		img{
 			width: 100%;
 		}
+		&:hover{
+			z-index: 100;
+			box-shadow: -9px 9px 10px rgba(0,0,0,.15);
+		}	
 	}
-
 }
 
 
@@ -1117,20 +1123,24 @@ ___________________________________________________________*/
 
 .sale{
 	background: #fff;
+	flex-basis: 61%;
+	align-self: flex-start;
 	.saleDate{
-		padding: 30px 0 0 0;
+		padding: 28px 0 0 0;
 		display: inline-block;
 		vertical-align: top;
+		z-index: 10;
+		position: relative;
 		p{
 			color: #ff5722;
 			font-family: "OpenSansBold";
 			font-size: 16px;
 			display: block;
 			width: 53px;
-			height: 45px;
+			height: 47px;
 			text-align: center;
 			border: 1px solid #ddd;
-			padding: 11px 0 0 0;
+			padding: 9px 0 0 0;
 			box-sizing: border-box;
 			border-bottom: none;
 			&:last-child{
@@ -1147,6 +1157,13 @@ ___________________________________________________________*/
 	.goodImg{
 		display: inline-block;
 		vertical-align: top;
+		position: relative;
+		left: -13px;
+		z-index: 5;
+		.saleIcon{
+			right: -60px;
+			top: 20px;
+		}
 	}
 	.goodBottom{
 		@extend .flex;
@@ -1156,18 +1173,20 @@ ___________________________________________________________*/
 				color: #484848;
 				text-transform: uppercase;
 				font-family: "RalewayBlack";
-				margin: 0 0 10px 0;
+				margin: 0 0 8px 0;
 				cursor: pointer;
+				letter-spacing: -.5px;
 				&:hover{
 					color: $blueColor;
 				}
 			}
 			.oldPrice{
 				font-family: "OpenSansRegular";
-				margin: 10px 15px 0 0;
+				margin: 0px 12px 0px 0;
 			}
 			.stars{
-				margin: 10px 0 0 0;
+				margin: 15px 0 0 0;
+				font-size: 12px;
 			}
 		}
 		.pagination{
@@ -1204,3 +1223,61 @@ ___________________________________________________________*/
 	flex-basis: 285px;
 	border-left: 1px solid #ddd;
 }
+.productsBlockHeader{
+	font-size: 20px;
+	color: #484848;
+	margin: 30px 0 31px 20px;
+	.black{
+		font-size: 20px;
+	}
+}
+.productArticle{
+	width: 100%;
+	border-top: 1px solid #ddd;
+	padding: 19px 20px;
+	box-sizing: border-box;
+	.imgWrap{
+		border: 1px solid #ddd;
+		width: 90px;
+		height: 90px;
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 13px 0 0;
+		img{
+			width: 100%;
+		}
+	}
+	.productDisc{
+		display: inline-block;
+		vertical-align: top;
+		.productHeader{
+			color: #484848;
+			letter-spacing: -.4px;
+			margin: 5px 0 7px 0;
+		}
+		.last{
+			margin: 0px 0 7px 0;
+		}
+		.stars{
+			font-size: 12px;
+			margin: 0 0 7px 0;
+		}
+	}
+	&:hover {
+		.imgWrap {
+			border: 1px solid $blueColor;
+		}
+		.productDisc .productHeader{
+			color: $blueColor;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
