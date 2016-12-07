@@ -83,7 +83,7 @@ $h: 3px;
 	&::before{
     	content: ''; 
 	    position: absolute;
-	    right: 41px; 
+	    left: 0px; 
 	    top: 26px;
 	    border-bottom: 15px solid transparent;
 	    border-left: 10px solid $saleColor;

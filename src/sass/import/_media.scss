@@ -93,6 +93,7 @@
 
 .container{
 	position: relative;
+	top: 0px !important;
 
 /*============================================================*/
 /*2.1. dealsSaleProducts*/
@@ -241,6 +242,7 @@
 		margin: 0 7px 0 0;
 	}
 	.productDisc{
+		padding: 0;
 		.productHeader{
 			letter-spacing: -.4px;
 			margin: 5px 0 7px 0;
@@ -256,6 +258,19 @@
 }
 
 }
+
+
+
+/*============================================================*/
+/*2.2. bannersBlock*/
+/*============================================================*/
+.bannersBlock{
+	margin: 0 !important;
+}
+
+
+
+
 
 
 

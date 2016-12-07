@@ -1041,11 +1041,15 @@ ___________________________________________________________*/
 
 
 .main{
-	background: #eee;
 }
 
-.container{
-	position: relative;
+.greyWrap{
+	background: #eee;
+	margin: -3px 0 0 0;
+	.container{
+		position: relative;
+		top: -60px;
+	}
 }
 /*============================================================*/
 /*2.1. dealsSaleProducts*/
@@ -1055,7 +1059,7 @@ ___________________________________________________________*/
 	@extend .flex;
 	width: 100%;
 	background: #fff;
-	margin: -60px 0 0 0;
+	/*margin: -60px 0 2px 0;*/
 	z-index: 50;
 }
 
@@ -1257,18 +1261,19 @@ ___________________________________________________________*/
 	.productDisc{
 		display: inline-block;
 		vertical-align: top;
+		padding: 5px 0 0 0;
 		.productHeader{
 			color: #484848;
 			letter-spacing: -.4px;
-			margin: 5px 0 7px 0;
-		}
-		.last{
-			margin: 0px 0 7px 0;
 		}
 		.stars{
 			font-size: 12px;
-			margin: 0 0 7px 0;
+			margin: 7px 0 7px 0;
 		}
+
+	}
+	.last{
+		padding: 0;
 	}
 	&:hover {
 		.imgWrap {
@@ -1292,6 +1297,7 @@ ___________________________________________________________*/
 /*============================================================*/
 
 .bannersBlock{
+	margin: -60px 0 0 0;
 	.flexWrap{
 		@extend .flex;
 	}
