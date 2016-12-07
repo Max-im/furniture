@@ -19,6 +19,7 @@
 		2.1.2. salesAndProducts
 			2.1.2.1. sale
 			2.1.2.2. products
+	2.2. bannersBlock
 3. 
 4. 
 5. 
@@ -1065,7 +1066,7 @@ ___________________________________________________________*/
 
 .deals{
 	background: $blueColor;
-	padding: 28px 0;
+	padding: 28px 0 25px 0;
 	flex-basis: 320px;
 	box-sizing: border-box;
 }
@@ -1279,6 +1280,90 @@ ___________________________________________________________*/
 	}
 }
 
+
+
+
+
+
+
+
+/*============================================================*/
+/*2.2. bannersBlock*/
+/*============================================================*/
+
+.bannersBlock{
+	.flexWrap{
+		@extend .flex;
+	}
+}
+.overflow{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: rgba(255,255,255,.25);
+	display: none;
+	z-index: 10;
+}
+.bannerImg{
+	flex-basis: 100%/3;
+	position: relative;
+	margin: -3px 0 0 0;
+	.imgWrap{
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&:hover{
+		.overflow{
+			display: block;
+		}		
+	}
+}
+.textNode{
+	position: absolute;
+	top: 30px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	width: 300px;
+	font-size: 0;
+	.blockHeader{
+		color: #43474a;
+		font-size: 30px;
+		letter-spacing: -.5px;
+	}
+
+	.headSpan{
+		font-size: 30px;
+		letter-spacing: -.5px;
+	}
+	.anotherBlue{
+		color: #06a3d8;
+		font-family: "RalewayBold";
+	}
+	.red{
+		color: #ef1c25;
+		font-family: "RalewayBold";
+	}
+	.textDisc{
+		font-size: 16px;
+		color: #43474a;
+		line-height: 18px;
+		letter-spacing: -.1px;
+	}
+	.discSpan{
+		font-size: 16px;
+		color: #43474a;
+	}
+	.center{
+		text-align: center;
+	}
+
+}
+.first{
+	width: 265px;
+}
 
 
 

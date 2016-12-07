@@ -439,7 +439,6 @@ ___________________________________________________________*/
 
 .dealsSaleProducts{
 	width: 100%;
-	margin: 0px 0 0 0;
 	flex-wrap: wrap;
 }
 
@@ -900,7 +899,6 @@ ___________________________________________________________*/
 
 .dealsSaleProducts{
 	width: 100%;
-	margin: 0px 0 0 0;
 	flex-wrap: wrap;
 }
 
@@ -1082,6 +1080,55 @@ ___________________________________________________________*/
 
 
 
+/*============================================================*/
+/*2.2. bannersBlock*/
+/*============================================================*/
+
+.bannersBlock{
+	.container{
+		.flexWrap{
+			background: #fff;
+			padding: 10px 0 0 0;
+			.textNode{
+				top: 20px;
+				width: 100%;
+				text-align: center;
+				.blockHeader{
+					font-size: 16px;
+					letter-spacing: -.5px;
+				}
+
+				.headSpan{
+					font-size: 16px;
+					letter-spacing: -.5px;
+				}
+				.textDisc{
+					font-size: 10px;
+					line-height: 14px;
+					letter-spacing: -.1px;
+				}
+				.discSpan{
+					font-size: 10px;
+				}
+			}
+			.first{
+				width: 100%;
+			}
+
+
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1251,6 +1298,7 @@ ___________________________________________________________*/
 			}
 			.compDesc{
 				width: 220px;
+				display: block;
 				font-size: 10px;
 				line-height: 15px;
 				letter-spacing: -.5px;
@@ -1320,7 +1368,6 @@ ___________________________________________________________*/
 
 .dealsSaleProducts{
 	width: 100%;
-	margin: 0px 0 0 0;
 	flex-wrap: wrap;
 }
 
@@ -1498,6 +1545,62 @@ ___________________________________________________________*/
 
 
 
+
+/*============================================================*/
+/*2.2. bannersBlock*/
+/*============================================================*/
+
+.bannersBlock{
+	.container{
+		.flexWrap{
+			flex-wrap: wrap;
+			.bannerImg{
+				flex-basis: 100%;
+			}
+			.textNode{
+				top: 30px;
+				width: 100%;
+				text-align: center;
+				.blockHeader{
+					font-size: 30px;
+					letter-spacing: -.5px;
+				}
+
+				.headSpan{
+					font-size: 30px;
+					letter-spacing: -.5px;
+				}
+				.textDisc{
+					font-size: 20px;
+					line-height: 25px;
+					letter-spacing: -.1px;
+				}
+				.discSpan{
+					font-size: 20px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -1625,7 +1728,6 @@ ___________________________________________________________*/
 
 .dealsSaleProducts{
 	width: 100%;
-	margin: 0px 0 0 0;
 	flex-wrap: wrap;
 }
 
@@ -1804,6 +1906,45 @@ ___________________________________________________________*/
 }
 
 }
+
+
+
+
+/*============================================================*/
+/*2.2. bannersBlock*/
+/*============================================================*/
+
+.bannersBlock{
+	.container{
+		.flexWrap{
+			.textNode{
+				top: 25px;
+				.blockHeader{
+					font-size: 25px;
+				}
+
+				.headSpan{
+					font-size: 25px;
+				}
+				.textDisc{
+					font-size: 16px;
+					line-height: 18px;
+				}
+				.discSpan{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
 
 
 
