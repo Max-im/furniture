@@ -122,13 +122,40 @@ $("#carousel").owlCarousel({
 	mouseDrag: false,
 	slideSpeed : 300,
     paginationSpeed : 400,
-    singleItem:true
+    transitionStyle : "fade",
+    singleItem: true
 
 });
 
 
+
+
+
+
+
+// carousel-2
+$('#owlCarousel-2').owlCarousel({
+	items : 4,
+	autoPlay : 7000,
+	pagination: false,
+	navigation : true,
+	mouseDrag: false,
+	slideSpeed : 800,
+    paginationSpeed : 400,
+    singleItem: false,
+    transitionStyle : "backSlide"
+
+    //itemsDesktop : [1000,5], //5 items between 1000px and 901px
+    //itemsDesktopSmall : [900,3], // betweem 900px and 601px
+    //itemsTablet: [600,2], //2 items between 600 and 0
+
+});
+
+
+
 $('.owl-prev').empty().append('<i class="fa fa-angle-left" aria-hidden="true"></i>');
 $('.owl-next').empty().append('<i class="fa fa-angle-right" aria-hidden="true"></i>');
+
 
 
 

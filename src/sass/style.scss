@@ -20,6 +20,7 @@
 			2.1.2.1. sale
 			2.1.2.2. products
 	2.2. bannersBlock
+	2.3. feauteredProduct
 3. 
 4. 
 5. 
@@ -1376,5 +1377,96 @@ ___________________________________________________________*/
 
 
 
+/*============================================================*/
+	/*2.3. feauteredProduct*/
+/*============================================================*/
 
+.feauteredProduct{
+	background: #fff;
+}
+.sectionWrap{
+	text-align: center;
+	.sectionHeader{
+		font-size: 20px;
+		line-height: 37px;
+		border-top: 1px solid #444;
+		border-bottom: 1px solid #444;
+		display: inline-block;
+		margin: 48px 0 16px 0;
+	}
 
+	.sectionHeaderSpan{
+		font-size: 20px;
+	}
+
+	.slideItom{
+		border: 1px solid #ddd;
+		margin: 15px;
+		img{
+			width: 100%;
+			margin: 0 0 16px 0;
+		}
+		.slideGoodsLink{
+			color: #484848;
+			margin: 10px 0;
+
+		}
+		.stars{
+			font-size: 12px;
+			margin: 15px 0 10px 0;
+		}
+		.oldPrice{
+			margin: 0 10px 0 0;
+		}
+		.redPrice{
+			margin: 0 0 25px 0;
+		}
+
+		.addToCart{
+			border-top: 1px solid #ddd;
+			line-height: 45px;
+			@extend .flex;
+			.fa{
+				color: #999;
+				line-height: 45px;
+				padding: 0 15px;
+			}
+		}
+		.saleIcon{
+			top: 20px;
+			right: 20px;
+		}
+		.newIcon{
+			top: 20px;
+			left: 20px;	
+		}
+	}
+	.owl-prev{
+		.fa-angle-left{
+			color: #9d9d9d !important;
+			font-size: 25px !important;
+			display: block;
+			width: 35px; 
+			height: 35px;
+			line-height: 35px;
+			top: -165px !important;
+			left: 14px !important;
+			border: 1px solid #ddd;
+		}
+	}
+	.owl-next{
+		.fa-angle-right{
+			color: #9d9d9d !important;
+			font-size: 25px !important;
+			display: block;
+			width: 35px; 
+			height: 35px;
+			line-height: 35px;
+			top: -165px !important;
+			right: 13px !important;
+			border: 1px solid #ddd;
+		}
+
+	}
+
+}

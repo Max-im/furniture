@@ -91,6 +91,22 @@ $h: 3px;
 }
 
 
+.newIcon{
+	@extend .saleIcon;
+	&::after{
+		content: "NEW";
+		background: $blueColor;
+	}
+	&::before{
+	    right: 0px; 
+	    top: 26px;
+	    border-bottom: 15px solid transparent;
+	    border-left: none;
+	    border-right: 10px solid $blueColor;
+    }	
+}
+
+
 .fa-star{
 	color: $goldColor;
 }

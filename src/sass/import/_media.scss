@@ -1600,8 +1600,50 @@ ___________________________________________________________*/
 
 
 
+/*============================================================*/
+	/*2.3. feauteredProduct*/
+/*============================================================*/
 
+.feauteredProduct{
+	.sectionWrap{
+		.sectionHeader{
+			font-size: 20px;
+			line-height: 30px;
+			margin: 25px 0 10px 0;
+		}
 
+		.sectionHeaderSpan{
+			font-size: 20px;
+		}
+
+		.slideItom{
+			margin: 15px;
+			img{
+				margin: 0 0 10px 0;
+			}
+			.slideGoodsLink{
+				margin: 5px 0;
+			}
+			.stars{
+				margin: 5px 0 ;
+			}
+			.oldPrice{
+				margin: 0 5px 0 0;
+			}
+			.redPrice{
+				margin: 0 0 15px 0;
+			}
+
+			.addToCart{
+				line-height: 35px;
+				.fa{
+					line-height: 35px;
+					padding: 0 10px;
+				}
+			}
+		}
+	}
+}
 
 
 
