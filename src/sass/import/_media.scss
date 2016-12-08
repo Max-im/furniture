@@ -1633,20 +1633,36 @@ ___________________________________________________________*/
 			.redPrice{
 				margin: 0 0 15px 0;
 			}
-
-			.addToCart{
-				line-height: 35px;
-				.fa{
-					line-height: 35px;
-					padding: 0 10px;
-				}
-			}
 		}
 	}
 }
 
 
 
+
+
+
+
+/*============================================================*/
+	/*2.3. feauteredProduct*/
+/*============================================================*/
+
+.feauteredProduct{
+	.sectionWrap{
+		/*owlControls*/
+		.owl-prev{
+			.fa-angle-left{
+				left: 15px !important;
+			}
+		}
+		.owl-next{
+			.fa-angle-right{
+				right: 15px !important;
+
+			}
+		}
+	}
+}
 
 
 

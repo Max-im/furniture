@@ -141,9 +141,8 @@ $('#owlCarousel-2').owlCarousel({
 	navigation : true,
 	mouseDrag: false,
 	slideSpeed : 800,
-    paginationSpeed : 400,
-    singleItem: false,
-    transitionStyle : "backSlide"
+    paginationSpeed : 1300,
+    singleItem: false
 
     //itemsDesktop : [1000,5], //5 items between 1000px and 901px
     //itemsDesktopSmall : [900,3], // betweem 900px and 601px

@@ -59,10 +59,68 @@ $h: 3px;
 	}
 }
 
+
+
+.comparePopup{
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	font-family: "RalewayRegular";
+	&::after{
+		content: "Compare";
+		position: absolute;
+		display: block;
+		background: rgba(0,0,0,.5);
+		color: #fff;
+		font-size: 12px;
+		width: 75px;
+		height: 25px;
+		line-height: 25px;
+		border-radius: 10px;
+		top: -30px;
+		left: -15px;
+	}
+	&::before{
+    	content: ''; 
+	    position: absolute;
+	    left: 35%; 
+	    top: -5px;
+	    border: 5px solid transparent;
+	    border-top: 5px solid rgba(0,0,0,.5);
+    }
+}
+
+.addToWishlistPopup{
+	@extend .comparePopup;
+	&::after{
+		content: 'Add to wishlist';
+		width: 96px;
+		left: -38px;
+	}
+}
+
+.addCartPopup{
+	@extend .comparePopup;
+	text-transform: none;
+	&::after{
+		content: 'Add to cart';
+		width: 80px;
+		left: 26px;
+	}
+	&::before{
+	    left: 50%; 
+    }
+}
+
+
 .saleIcon{
 	position: absolute;
 	width: 50px;
 	height: 50px;
+	z-index: 10;
 	&::after{
 		content: "SALE";
 		display: block;
@@ -89,7 +147,6 @@ $h: 3px;
 	    border-left: 10px solid $saleColor;
     }
 }
-
 
 .newIcon{
 	@extend .saleIcon;
@@ -137,8 +194,6 @@ $h: 3px;
 	flex-wrap: nowrap;
 	justify-content: space-between;
 }
-
-
 
 
 
