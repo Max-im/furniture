@@ -21,6 +21,7 @@
 			2.1.2.2. products
 	2.2. bannersBlock
 	2.3. feauteredProduct
+	2.4. adventages
 3. 
 4. 
 5. 
@@ -1383,7 +1384,7 @@ ___________________________________________________________*/
 
 .feauteredProduct{
 	background: #fff;
-	padding: 0 0 40px 0;
+	padding: 0 0 25px 0;
 }
 .sectionWrap{
 	text-align: center;
@@ -1546,6 +1547,91 @@ ___________________________________________________________*/
 			}
 		}
 
+	}
+
+}
+
+
+
+
+
+
+
+
+/*============================================================*/
+/*2.4. adventages*/
+/*============================================================*/
+.adventages{
+	margin: 0 0 40px 0;
+}
+
+.flexWrap{
+	@extend .flex;
+
+	.adv{
+		flex-basis: (100%/3);
+		background: #49ccf3;
+		padding: 23px;
+		font-size: 0;
+		box-sizing: border-box;
+		position: relative;
+		.imgWrap{
+			display: inline-block;
+			vertical-align: middle;
+			width: 95px;
+			height: 95px;
+			border-radius: 50%;
+			box-shadow: 0px 0px 6px rgba(0,0,0,.15);
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.textWrap{
+			display: inline-block;
+			vertical-align: middle;
+			margin: 0 0 0 15px;
+			.advHeader{
+				font-size: 16px;
+				text-transform: uppercase;
+				color: #fff;
+				line-height: 28px;
+			}
+			.advTextNode{
+				font-family: "RalewayRegular";
+				display: block;
+				font-size: 12px;
+				color: #fff;
+				letter-spacing: -.3px;
+			}
+		}
+		
+	}
+	.lastAdv{
+		padding: 23px 23px 24px 61px;	
+	}
+	.navyBlue{
+		background: #13b5e6;
+		&::before{
+			content: ''; 
+			display: block;
+		    position: absolute;
+		    left: -109px; 
+		    top: 0px;
+		    border: 71px solid transparent;
+		    border-right: 40px solid #13b5e6;
+		    z-index: 1;
+		}
+		&::after{
+			content: ''; 
+			display: block;
+		    position: absolute;
+		    right: -109px; 
+		    top: 0px;
+		    border: 71px solid transparent;
+		    border-left: 40px solid #13b5e6;
+		    z-index: 1;
+		}
 	}
 
 }
