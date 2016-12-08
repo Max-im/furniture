@@ -136,7 +136,7 @@ $("#carousel").owlCarousel({
 // carousel-2
 $('#owlCarousel-2').owlCarousel({
 	items : 4,
-	autoPlay : 7000,
+	autoPlay : 5000,
 	pagination: false,
 	navigation : true,
 	mouseDrag: false,
@@ -147,6 +147,19 @@ $('#owlCarousel-2').owlCarousel({
     //itemsDesktop : [1000,5], //5 items between 1000px and 901px
     //itemsDesktopSmall : [900,3], // betweem 900px and 601px
     //itemsTablet: [600,2], //2 items between 600 and 0
+
+});
+
+// carousel-3
+$('#tester').owlCarousel({
+	items : 4,
+	autoPlay : 5000,
+	pagination: false,
+	navigation : true,
+	mouseDrag: false,
+	slideSpeed : 800,
+    paginationSpeed : 1300,
+    singleItem: false
 
 });
 
