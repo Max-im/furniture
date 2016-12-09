@@ -1501,6 +1501,7 @@ ___________________________________________________________*/
 		}
 	}
 	.blueInfo{
+		padding: 0 0 0 20px;
 		flex-basis: 100%;
 		background: rgba(39,156,199,.35);
 		.payWrap{
@@ -2110,6 +2111,7 @@ ___________________________________________________________*/
 				}
 				#support{
 					width: 60%;
+					font-size: 11px;
 				}
 				.supportBtn{
 					line-height: 30px;
@@ -2579,13 +2581,14 @@ ___________________________________________________________*/
 	}
 	.blueInfo{
 		flex-basis: 100%;
+		padding: 0 0 0 20px;
 		background: rgba(39,156,199,.35);
 		.payWrap{
 			flex-wrap: wrap;
 			justify-content: flex-start;
 			padding: 25px 0 5px 0;
 			.payItom{
-				margin: 0 15px 15px 0;
+				margin: 0 5px 0px 0;
 				a{
 					width: 42px;
 					height: 26px;
