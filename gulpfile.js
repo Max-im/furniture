@@ -10,6 +10,7 @@ var gulp 			= require('gulp'), // require Gulp
 	imagemin 		= require('gulp-imagemin'), // require gulp-imagemin (for img optimisation)
 	pngquant 		= require('imagemin-pngquant'), // require imagemin-pngquant (for png optimisation)
 	cache 			= require('gulp-cache'), // require gulp-cache (for cache management)
+	debug 			= require('gulp-debug'), //require gulp-debug (for print actions in console)
 	spritesmith 	= require('gulp.spritesmith'), //require gulp.spritesmith (for sprites making)
 	autoprefixer 	= require('gulp-autoprefixer'); // require gulp-autoprefixer (for adding prefixes)
 
@@ -55,7 +56,9 @@ gulp.task('css-libs', function(){
 		
 
 		// ...
+
 		])
+		.pipe(debug({title: 'css-libs'}))
 		.pipe(concat('libs.min.css'))
 		.pipe(cssnano())
 		.pipe(gulp.dest('src/css'));
@@ -74,6 +77,7 @@ gulp.task('libs-js', function() {
 
 		// ...
 		])
+		.pipe(debug({title: 'js-libs'}))
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('src/js'));
@@ -95,6 +99,7 @@ gulp.task('plugins-js', function() {
 
 		// ...
 		])
+		.pipe(debug({title: 'plugins'}))
 		.pipe(concat('plugins.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('src/js'));

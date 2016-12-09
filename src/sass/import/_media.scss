@@ -735,6 +735,68 @@ ___________________________________________________________*/
 
 
 
+/*============================================================*/
+
+/*3. footer*/
+
+/*============================================================*/
+
+.footer{
+
+}
+
+.supportPanel{
+	padding: 25px 0;
+	.container{
+
+		.flexWrap{
+			flex-wrap: wrap;
+
+			.textWrap{
+				flex-basis: 100%;
+				text-align: center;
+				margin: 0 0 10px 0;
+			}
+			.headerNode{
+				font-size: 18px;
+				line-height: 25px;
+			}
+			.supportTextNode{
+			}
+
+			.supportFormWrap{
+				flex-basis: 100%;
+			}
+			.formWrap{
+				width: 450px;
+				margin: 0 auto;
+				.fa{
+					padding: 0 8px;
+					line-height: 42px;
+					font-size: 18px;
+					margin: 0 16px 0 0;
+					&::after{
+						height: 34px;
+						top: 2px;
+					}
+				}
+				#support{
+					width: 60%;
+				}
+				.supportBtn{
+					line-height: 40px;
+					padding: 2px 10px;
+				}
+			}
+		}
+	}
+
+}
+
+
+
+
+
 
 
 
@@ -1839,6 +1901,74 @@ ___________________________________________________________*/
 		}
 	}
 }
+
+
+
+
+
+
+/*============================================================*/
+
+/*3. footer*/
+
+/*============================================================*/
+
+.footer{
+
+
+.supportPanel{
+	padding: 15px 0;
+	.container{
+
+		.flexWrap{
+			flex-wrap: wrap;
+
+			.textWrap{
+				flex-basis: 100%;
+				text-align: center;
+				margin: 0 0 10px 0;
+			}
+			.headerNode{
+				font-size: 14px;
+				line-height: 18px;
+			}
+			.supportTextNode{
+			}
+
+			.supportFormWrap{
+				flex-basis: 100%;
+			}
+			.formWrap{
+				width: 330px;
+				margin: 0 auto;
+				.fa{
+					padding: 0 8px;
+					line-height: 30px;
+					font-size: 18px;
+					margin: 0 16px 0 0;
+					&::after{
+						height: 34px;
+						top: 2px;
+					}
+				}
+				#support{
+					width: 60%;
+				}
+				.supportBtn{
+					line-height: 30px;
+					padding: 2px 10px;
+				}
+			}
+		}
+	}
+
+}
+
+}
+
+
+
+
 
 
 
