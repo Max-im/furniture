@@ -1530,6 +1530,66 @@ ___________________________________________________________*/
 
 
 
+/*============================================================*/
+
+/*3.3 bottomLine*/
+
+/*============================================================*/
+
+.footer{
+
+	
+
+.bottomLine{
+.container{
+	padding: 25px 0 0 0;
+	.flexWrap{
+		.leftBlock{
+			text-align: center;
+			padding: 0px 0 10px 0;
+		}
+		.bottomLineText{
+			font-size: 18px;
+		}
+		.ourApp{
+			display: inline-block;
+			margin: 10px 5px 0 5px;
+		}
+		.app-s{
+			display: block;
+			width: 100px;
+			height: 32px;
+		}
+
+		
+
+		.rightBlock{
+			text-align: center;
+			padding: 0px;
+		}
+
+
+		.socialPanel{
+			.socPanelItem{
+				width: 35px;
+				height: 35px;
+				margin: 10px 10px 0 0;
+				.socPanelText{
+					line-height: 35px;
+				}
+			}
+		}
+
+	}
+}
+
+}
+
+
+}
+
+
+
 
 
 
@@ -2075,11 +2135,12 @@ ___________________________________________________________*/
 
 
 .supportPanel{
-	padding: 15px 0;
+	padding: 5px 0;
 	.container{
 
 		.flexWrap{
 			flex-wrap: wrap;
+			padding: 0;
 
 			.textWrap{
 				flex-basis: 100%;
@@ -2125,13 +2186,65 @@ ___________________________________________________________*/
 
 }
 
+/*============================================================*/
+
+/*3.3 bottomLine*/
+
+/*============================================================*/
+
+.footer{
+
+	
+
+.bottomLine{
+.container{
+	padding: 25px 0 0 0;
+	.flexWrap{
+		.leftBlock{
+			flex-basis: 100%;
+			text-align: center;
+			padding: 0px 0 10px 0;
+		}
+		.bottomLineText{
+			font-size: 18px;
+		}
+		.ourApp{
+			display: inline-block;
+			margin: 10px 5px 0 5px;
+		}
+		.app-s{
+			display: block;
+			width: 117px;
+			height: 39px;
+		}
+
+		
+
+		.rightBlock{
+			flex-basis: 100%;
+			text-align: center;
+			padding: 0px;
+		}
 
 
+		.socialPanel{
+			.socPanelItem{
+				width: 40px;
+				height: 40px;
+				margin: 10px 10px 0 0;
+				.socPanelText{
+					line-height: 40px;
+				}
+			}
+		}
+
+	}
+}
+
+}
 
 
-
-
-
+}
 
 
 

@@ -113,6 +113,34 @@ makeHover('.livingroomMenuItem', '.livingroomMenuSubmenuWrap');
 makeHover('.featuresMainMenuItem', '.featuresMenuSubmenuWrap');
 
 
+let contWid = $('.container').innerWidth();
+if( contWid > 768){
+
+
+	$('.footer').hover(
+		function(e){
+			$('.bottomLine').fadeIn(1000);
+			$('.supportPanel').fadeIn(1000);
+			let winHeight = $(document).height();
+			$(window).scrollTop(winHeight);
+		},
+		function(){
+			$('.bottomLine').fadeOut();
+			$('.supportPanel').fadeOut();
+		}
+	);
+
+}
+else{
+
+	$('.bottomLine').css('display', 'block');
+	$('.supportPanel').show();
+
+}
+
+
+
+
 
 $("#carousel").owlCarousel({
 	items : 1,
