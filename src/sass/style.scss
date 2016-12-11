@@ -1236,6 +1236,40 @@
 	flex-basis: 285px;
 	border-left: 1px solid #ddd;
 	z-index: 10;
+/*
+	.productArticle{
+		width: 100%;
+		border-top: 1px solid #ddd;
+		padding: 19px 20px;
+		box-sizing: border-box;
+	}
+	
+	.productsItom{
+		.saleDate{
+			display: none;
+		}
+		.goodImg{
+			width: 90px;
+			height: 90px;
+			border: 1px solid #ddd;
+			display: inline-block;
+			vertical-align: top;
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		}
+		.goodBottom{
+			display: inline-block;
+			vertical-align: top;
+		}
+		.pagination{
+			display: none;
+		}
+
+
+	}
+*/
 }
 .productsBlockHeader{
 	font-size: 20px;
