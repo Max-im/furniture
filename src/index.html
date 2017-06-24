@@ -28,120 +28,151 @@
 	
 	================ -->
 	<header class="header">
+			
 		
-	
-	
-		<!-- ====logPanel===== -->
-		<div class="logInPanel">
-				
-			<div class="container">
-				<div class="leftPanel">
+		<div class="container">
+			<div class="topLine">
+
+				<ul class="topLine__left">
+
+					<li class="topLine__select topLine__select_money">
+						<a class="topLine__link topLine__link_target" href="#">USD</a>
+						<ul class="topLine__subMenu topLine__subMenu_money">
+							
+							<li class="uah">
+								<a class="topLine__link topLine__link_sub" href="#">UAH</a>
+							</li>
+							<li calss="eur">
+								<a class="topLine__link topLine__link_sub" href="#">EUR</a>
+							</li>
+							<li calss="usd">
+								<a class="topLine__link topLine__link_sub" href="#">USD</a>
+							</li>
+						</ul>
+					</li>
 					
-					<div class="logPanelInner">
-						<ul class="mainRightMenu">
-							<li class="selectMenu moneyMenu">
-								<a class="selectTarget" href="#">USD</a>
-								<ul class="subMenu hide moneySubSelect">
-									<li class="uah"><a class="selectItom" href="#">UAH</a></li>
-									<li calss="eur"><a class="selectItom" href="#">EUR</a></li>
-									<li calss="usd"><a class="selectItom" href="#">USD</a></li>
-								</ul>
+
+
+					<li class="topLine__select topLine__select_lang">
+					<a class="topLine__link topLine__link_target" href="#">
+						<img src="img/flag-en.png" alt="flag"> 
+						English
+					</a>
+						<ul class="topLine__subMenu topLine__subMenu_lang">
+							<li class="eng">
+								<a class="topLine__link topLine__link_sub" href="#">
+									<img src="img/flag-en.png" alt="flag">
+									English
+								</a>
 							</li>
-							
-							<li class="selectMenu langMenu">
-							<a class="selectTarget" href="#">
-								<img src="img/flag-en.png" alt="flag"> 
-								English
-							</a>
-								<ul class="subMenu hide langSubSelect">
-									<li class="eng">
-										<a class="selectItom" href="#">
-											<img src="img/flag-en.png" alt="flag">
-											English
-										</a>
-									</li>
-									<li>
-										<a class="selectItom" href="#">
-											<img src="img/flag-fr.png" alt="flag">
-											French
-										</a>
-									</li>
-									<li>
-										<a class="selectItom" href="#">
-											<img src="img/flag-gr.png" alt="flag">
-											German
-										</a>
-									</li>
-									<li>
-										<a class="selectItom" href="#">
-											<img src="img/flag-ag.png" alt="flag">
-											Argentina
-										</a>
-									</li>
-									<li>
-										<a class="selectItom" href="#">
-											<img src="img/flag-bl.png" alt="flag">
-											Bolivia
-										</a>
-									</li>
-								</ul>
-							</li>
-							
-							<li class="selectMenu accountMenu"><a class="selectTarget" href="#">
-								 my Account 
-							</a>
-								<ul class="subMenu hide">
-									<li><a class="selectItom" href="#">my Account</a></li>
-									<li><a class="selectItom" href="#">My Wishlist</a></li>
-									<li><a class="selectItom" href="#">My Osders</a></li>
-									<li><a class="selectItom" href="#">Address Book</a></li>
-									<li><a class="selectItom" href="#">My Tags</a></li>
-									<li><a class="selectItom" href="#">Billing Agreements</a></li>
-									<li><a class="selectItom" href="#">Recurring Profiles</a></li>
-								</ul>
-							</li>
-							
 							<li>
-								<a class="wishList" href="#">
-									<i class="fa fa-heart" aria-hidden="true"></i>
+								<a class="topLine__link topLine__link_sub" href="#">
+									<img src="img/flag-fr.png" alt="flag">
+									French
+								</a>
+							</li>
+							<li>
+								<a class="topLine__link topLine__link_sub" href="#">
+									<img src="img/flag-gr.png" alt="flag">
+									German
+								</a>
+							</li>
+							<li>
+								<a class="topLine__link topLine__link_sub" href="#">
+									<img src="img/flag-ag.png" alt="flag">
+									Argentina
+								</a>
+							</li>
+							<li>
+								<a class="topLine__link topLine__link_sub" href="#">
+									<img src="img/flag-bl.png" alt="flag">
+									Bolivia
+								</a>
+							</li>
+						</ul>
+					</li>
+					
+
+
+
+					<li class="topLine__select topLine__select_menu">
+						<a class="topLine__link topLine__link_target" href="#">
+							my Account 
+						</a>
+						<ul class="topLine__subMenu topLine__subMenu_menu">
+							<li>
+								<a class="topLine__link topLine__link_sub" href="#">
+									my Account
+								</a>
+							</li>
+							<li>
+								<a class="topLine__link topLine__link_sub" href="#">
 									My Wishlist
 								</a>
 							</li>
 							<li>
-								<a class="login" href="#">
-									<i class="fa fa-lock" aria-hidden="true"></i>
-									Login
+								<a class="topLine__link topLine__link_sub" href="#">
+									My Osders
+								</a>
+							</li>
+							<li>
+								<a class="topLine__link topLine__link_sub" href="#">
+									Address Book
+								</a>
+							</li>
+							<li>
+								<a class="topLine__link topLine__link_sub" href="#">
+									My Tags
+								</a>
+							</li>
+							<li>
+								<a class="topLine__link topLine__link_sub" href="#">
+									Billing Agreements
+								</a>
+							</li>
+							<li>
+								<a class="topLine__link topLine__link_sub" href="#">
+									Recurring Profiles
 								</a>
 							</li>
 						</ul>
-				
-					</div>
-				
-				</div> <!-- end leftPanel -->
-				
-				
-				<div class="rightPanel">
-					
-					<div class="logPanelInner chatWrap">
-						<a class="lifeChat" href="#">
-							<i class="fa fa-comment-o" aria-hidden="true"></i>
-							<span class="hide992 hide480">Start </span><span class="strong big">life chat</span>
-						</a>
-					</div>
-					
-					<div class="logPanelInner callWrap">
-						<a class="callUs" href="#">
-							<i class="fa fa-phone" aria-hidden="true"></i>
-							Call <span class="hide992 hide480">our c</span>us<span class="hide992 hide480">tumer service at</span>: <span class="strong">096-9998386</span>
-						</a>
-					</div>
-				
-				</div> <!-- end rightPanel -->
-				
-			</div> <!-- end container -->
-		</div> <!-- end logPanel -->
+					</li>
 
+					
+					<li>
+						<a class="topLine__link" href="#">
+							<i class="fa fa-heart" aria-hidden="true"></i>
+							My Wishlist
+						</a>
+					</li>
+					<li>
+						<a class="topLine__link" href="#">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+							Login
+						</a>
+					</li>
+				</ul>
+
+
+
+
+				<div class="topLine__right">
+					<a class="topLine__link" href="#">
+						<i class="fa fa-comment-o" aria-hidden="true"></i>
+						<span class="topLine__hide">
+							Start <b>life chat</b>
+						</span>
+					</a>
+					<a class="topLine__link" href="#">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+							<span class="topLine__hide"> Call our custumer service at:</span> <b>096-9998386</b>
+						</a>
+				</div>
+
+			</div><!-- topLine -->
+		</div><!-- container -->
 	
+
 	
 	
 	
@@ -149,10 +180,10 @@
 		<div class="headLine" id="headLine">
 		
 			<div class="container">
-				<div class="headLineInner furnitureWrap">
-					<h3 class="blue furnitureHeader">furniture</h3>
-					<p class="furnitureWrapDescription">Home Furniture Store</p>
-				</div>
+				<a href="#" class="headLineInner furnitureWrap">
+					<span class="blue furnitureHeader">furniture</span>
+					<span class="furnitureWrapDescription">Home Furniture Store</span>
+				</a>
 				
 				<div class="headLineInner searchWrap">
 					<div class="searchForm">

@@ -1,35 +1,28 @@
 (function($) {
 
 
+// topLine
+$('.topLine__link_target').on('click', toggleMenu)
 
-
-// top selectMenu
-$('<i class="fa fa-user" aria-hidden="true"> </i>').prependTo($('.accountMenu')).css('marginRight', 5);
-$('<i class="fa fa-sort-desc" aria-hidden="true"></i>').appendTo($('.selectMenu'));
-
-
-
-$(".selectMenu").on("click", function(e){
+function toggleMenu(e){
 	e.preventDefault();
-	let item = e.target;
-	let itemObj = $(e.target.nextElementSibling);
-	function hideMenu(){
-		itemObj.slideUp().addClass("hide");
-	};
-	if(itemObj.hasClass("hide")){
-		itemObj.slideDown().removeClass('hide');
-		itemObj.on('click', function(e){
-			e.preventDefault();
-			let textNode = e.target.innerHTML;
-			item.innerHTML = textNode;
-			hideMenu();
-		});
-	} else{
-		
-		hideMenu();
-	}
+	const subMenu = $(e.target).closest('.topLine__select').find('.topLine__subMenu');
+	$(subMenu).toggle();
+}
 
-})
+
+$('.topLine__link_sub').on('click', changeTarget)
+
+function changeTarget(e){
+	e.preventDefault();
+	const value = e.target.innerHTML;
+	const subMenu = $(e.target).closest('.topLine__select').find('.topLine__subMenu');
+	const menuTarget = $(e.target).closest('.topLine__select').find('.topLine__link_target');
+	menuTarget.html(value);
+	$(subMenu).toggle();
+}
+
+
 
 
 

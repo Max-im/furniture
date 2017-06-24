@@ -9,7 +9,7 @@
 
 0. common
 1. header
-	1.1. logPanel
+	1.1. topLine
 	1.2. headLine
 	1.3. mainMenuLine
 	1.4. slider
@@ -42,7 +42,9 @@
 	margin: 0 auto;
 }
 
-
+b{
+	font-weight: bold;
+}
 
 /*===========================================================*/
 /*1. header*/
@@ -52,146 +54,76 @@
 
 
 /*============================================================*/
-/*1.1. logPanel
+/*1.1. topLine
 /*============================================================*/
 
-.logInPanel{
-	padding: 10px 0 13px 0;
-	border-bottom: 1px solid #ddd;
-	font-size: 12px;
-
-	.container{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: space-between;
-	}
-
-	a,
-	i{
-		color: #484848;
-
-	}
-}
-
-.fa-sort-desc{
+.topLine{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	position: relative;
-	top: -3px;
-}
+	z-index: 100;
+	width: 100%;
+	height: 50px;
+	&__left{
+		display: flex;
+		justify-content: flex-start;
+		flex: 1 1 60%;
 
-.logPanelInner{
-	display: inline-block;
-	vertical-align: top;
-	padding: 0 13px 0 0;
-	&:last-child{
-		padding: 0;
 	}
-}
-
-.leftPanel{
-	.mainRightMenu{
-		>li{
-			position: relative;
-			display: inline-block;
-			vertical-align: top;
-			margin: 0 12px;
-			&:first-child{
-				margin: 0px;
-			}
-			img{
-				position: absolute;
-				left: 5px;
-			}
-
-			&:hover a,
-			&:hover i{
-				color: $blueColor;
-				cursor: pointer;
-			}
-		}
-	
-		.selectMenu{
-			position: relative;
-			z-index: 20;
-			>a{
-				padding: 0 0 10px 0;
-			}
-		}
+	&__select{
+		position: relative;
 	}
-
-	.subMenu{
+	&__subMenu{
 		position: absolute;
 		background: #fff;
-		margin: 10px 0 0 0;
-		box-shadow: 0 0 6px rgba(0,0,0,.35);
-		z-index: 10;
+		top: 100%;
+		left: 0;
+		box-shadow: 0 0 5px #484848;
 		display: none;
-		a{
-			padding: 5px 10px;
-			display: block;
-			width: 100%;
-		}
-		&:hover{
-			a{
-				color: #484848;
-			}
+	}
 
-		};
-		li{
+
+	&__right{
+		display: flex;
+		justify-content: flex-end;
+		flex: 1 1 40%;
+	}
+	&__link{
+		color: #484848;
+		display: block;
+		padding: 5px 10px;
+		&:hover{
+			color: $blueColor;
+		}
+		&_target{
+			&:after{
+				content: '\f078';
+				font-family: "FontAwesome";
+				color: #484848;
+				margin: 0 0 0 3px;				
+			}
 			&:hover{
-				background: $blueColor;
-				a{
-					color: #fff;
+				&:after{
+					color: $blueColor;	
 				}
 			}
 		}
-	}
-	.langMenu{
-		a{
-			margin: 0 0 0 25px;
-		}
-		.subMenu{
-			a{
-				margin: 0 0 0 15px;		
+		&_sub{
+			&:hover{
+				background: $blueColor;
+				color: #fff;
 			}
 		}
 	}
-	.accountMenu{
-		.subMenu{
-			width: 150px;
-			left: 0px;
-		}
-	}
-
 }
-
-
-.rightPanel{
-	.fa{
-		font-size: 18px;	
-		line-height: 12px;
-	}
-	.chatWrap{
-		padding: 0 45px 0 0;
-	}
-	.callUs{
-		letter-spacing: 0.2px;
-	}
-
-	a{
-		&:hover,
-		&:hover i{
-			color: $blueColor;
-		}
-	}
-}
-
 
 
 /*============================================================*/
 /*1.2. headLine
 /*============================================================*/
 .headLine{
+	border-top: 1px solid #333;
 	.container{
 		display: flex;
 		flex-direction: row;
@@ -211,12 +143,14 @@
 	text-transform: uppercase;
 	font-size: 34px;
 	font-family: "RalewayBlack";
+	display: block;
 }
 
 .furnitureWrapDescription{
 	font-size: 14px;
 	color: #969696;
 	letter-spacing: 3px;
+	display: block;
 }
 
 
