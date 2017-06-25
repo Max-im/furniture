@@ -1,6 +1,11 @@
 (function($) {
 
 
+$('.topLine__select').each(function(item, i){
+	$(item).css('z-index', 10-i);
+})
+
+
 // topLine
 $('.topLine__link_target').on('click', toggleMenu)
 

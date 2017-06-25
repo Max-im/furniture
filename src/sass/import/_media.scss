@@ -348,6 +348,39 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
+
+
+
+/*============================================================*/
+/*1.1. topLine
+/*============================================================*/
+.container{
+
+.topLine{
+	&__left{
+		flex: 1 1 90%;
+
+	}
+	&__right{
+		flex: 1 1 10%;
+	}
+	&__link{
+		padding: 5px 15px;
+		&_target{
+			&:after{
+				margin: 0 0 0 3px;				
+			}
+			
+		}
+	}
+	&__hide{
+		display: none;
+	}
+}
+}
+
+
+
 	.hide992{
 		display: none;
 	}
@@ -879,6 +912,44 @@ ___________________________________________________________*/
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
+
+
+
+
+/*============================================================*/
+/*1.1. topLine
+/*============================================================*/
+.container{
+
+.topLine{
+	flex-wrap: wrap;
+	&__left{
+		flex: 1 1 100%;
+		justify-content: center;
+
+	}
+	&__right{
+		flex: 1 1 100%;
+		justify-content: center;
+	}
+	&__link{
+		padding: 5px 15px;
+		&_target{
+			&:after{
+				margin: 0 0 0 3px;				
+			}
+			
+		}
+	}
+	&__hide{
+		display: none;
+	}
+}
+}
+
+
+
 
 	.hide768{
 		display: none;
@@ -2257,6 +2328,42 @@ ___________________________________________________________*/
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+
+/*============================================================*/
+/*1.1. topLine
+/*============================================================*/
+.container{
+
+.topLine{
+	&__left{
+		flex: 1 1 100%;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+	&__right{
+		flex: 1 1 100%;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+	&__link{
+		padding: 5px 5px;
+		letter-spacing: -.4px;
+		&_target{
+			&:after{
+				margin: 0 0 0 1px;				
+			}
+			
+		}
+	}
+	&__hide{
+		display: inline;
+	}
+}
+}
+
+
+
 	.hide480{
 		display: none;
 	}
